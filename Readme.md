@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александра Дудкина](https://up.htmlacademy.ru/adaptive/26/user/2097425).
-* Наставник: `Александр Бабченко`(https://htmlacademy.ru/profile/babtshe).
+* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/babtshe).
 
 ---
 
