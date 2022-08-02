@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -69,7 +69,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link">
               Подбор программы
             </a>
           </li>
@@ -86,28 +86,28 @@
         <fieldset class="questionnaire__fieldset basic">
           <div class="questionnaire__property basic__wrapper questionnaire__property--name">
             <label class="basic__label" for="name">Имя<em>*</em></label>
-            <input class="basic__input" type="text" placeholder="" value="Барсик" name="name" id="name" required>
+            <input class="basic__input" type="text" placeholder="Барсик" value="" name="name" id="name" required>
           </div>
           <div class="questionnaire__property basic__wrapper questionnaire__property--weight">
             <label class="basic__label" for="weight">Вес (кг):<em>*</em></label>
-            <input class="basic__input" type="number" placeholder="" value="7" name="weight" id="weight" required>
+            <input class="basic__input" type="number" placeholder="7" value="" name="weight" id="weight" required>
           </div>
           <div class="questionnaire__property basic__wrapper questionnaire__property--age">
             <label class="basic__label" for="age">Возраст (лет):</label>
-            <input class="basic__input" type="number" placeholder="" value="7" name="age" id="age">
+            <input class="basic__input" type="number" placeholder="7" value="" name="age" id="age">
           </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset aim">
           <label class="aim__label">
-            <input class="aim__input" type="radio" id="lose-weight" name="lose-weight" checked>
+            <input class="aim__input" type="radio" id="lose-weight" name="target-aim" value="lose-weight" checked>
             <span class="aim__label-name">похудение</span>
           </label>
           <label class="aim__label">
-            <input class="aim__input" type="radio" id="gain-weight" name="gain-weight">
+            <input class="aim__input" type="radio" id="gain-weight" name="target-aim" value="gain-weight">
             <span class="aim__label-name">Набор массы</span>
           </label>
           <label class="aim__label">
-            <input class="aim__input" type="radio" id="no-aim" name="no-aim">
+            <input class="aim__input" type="radio" id="no-aim" name="target-aim" value="no-aim">
             <span class="aim__label-name">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
@@ -118,12 +118,12 @@
           </legend>
           <div class="questionnaire__property contacts__wrapper questionnaire__property--email">
             <label class="сontacts__label" for="email">E-mail:<em>*</em></label>
-            <input class="contacts__input" type="email" placeholder="" value="kuklachev@gmail.com" name="email"
+            <input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" value="" name="email"
               id="email" required>
           </div>
           <div class="questionnaire__property contacts__wrapper questionnaire__property--phone">
             <label class="сontacts__label" for="phone">Телефон:<em>*</em></label>
-            <input class="contacts__input" type="tel" placeholder="" value="8 (960) 900-60-90" name="phone" id="phone"
+            <input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" value="" name="phone" id="phone"
               required>
           </div>
         </fieldset>
@@ -135,40 +135,38 @@
         <fieldset class="questionnaire__fieldset additional">
           <legend class="additional__legend">Дополнительно</legend>
           <label class="additional__label">
-            <input class="additional__input" type="checkbox" id="sweetener" name="sweetener" checked>
+            <input class="additional__input" type="checkbox" id="sweetener" name="additional-product" value="sweetener" checked>
             <span class="additional__label-name">сахарозаменитель</span>
           </label>
           <label class="additional__label">
-            <input class="additional__input" type="checkbox" id="water" name="water">
+            <input class="additional__input" type="checkbox" id="water" name="additional-product" vaqlue="water">
             <span class="additional__label-name">питьевая вода</span>
           </label>
           <label class="additional__label">
-            <input class="additional__input" type="checkbox" id="milk" name="milk">
+            <input class="additional__input" type="checkbox" id="milk" name="additional-product" value="milk">
             <span class="additional__label-name">молоко</span>
           </label>
           <label class="additional__label">
-            <input class="additional__input" type="checkbox" id="vitamins" name="vitamins">
+            <input class="additional__input" type="checkbox" id="vitamins" name="additional-product" value="vitamins">
             <span class="additional__label-name">витамины</span>
           </label>
         </fieldset>
-        <button class="questionnaire__button button" type="button">отправить заявку</button>
+        <button class="questionnaire__button button" type="submit">отправить заявку</button>
         <p class="questionnaire__required">* — Обязательные поля</p>
       </form>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
         <section class="main-footer__invitation invitation invitation--form-page">
-          <div class="invitation__wrapper">
             <h6 class="invitation__title">приглашаем к сотрудничеству дилеров!</h6>
             <address class="invitation__address">ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург</address>
-          </div>
           <iframe>
             карта
           </iframe>
         </section>
         <div class="main-footer__logo-name">
+        <a class="main-footer__logo-name-link" href="index.html">
           <svg class="main-footer__logo-name-icon logo-name-icon" width="101" height="18" viewBox="0 0 101 18"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="#111">
@@ -181,7 +179,8 @@
               </clipPath>
             </defs>
           </svg>
-        </div>
+        </a>
+      </div>
         <div class="main-footer__social social">
           <span class="visually-hidden">Ссылки на социальные сети.</span>
           <ul class="social__list">
@@ -232,6 +231,5 @@
             <span class="visually-hidden">Сайт разработчика.</span>
           </a>
         </div>
-      </div>
     </footer>
   </main>

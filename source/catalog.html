@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -64,7 +64,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link">
               Каталог продукции
             </a>
           </li>
@@ -80,10 +80,9 @@
   <main class="main-container">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <div class="catalog__wrapper">
         <ul class="catalog__list">
-          <li class="catalog__item product catalog__item--chicken-500">
-            <img class="product__image" src="../images/chiken-500.png" width="68" height="86"
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/chiken-500.png" width="68" height="86"
               alt="Cat Energy PRO 500 г">
             <p class="product__title">Cat Energy PRO 500 г</p>
             <div class="product__characteristics">
@@ -102,10 +101,10 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+            <a class="product__purchase">заказать</a>
           </li>
-          <li class="catalog__item product catalog__item--chicken-1000">
-            <img class="product__image" src="../images/chicken-1000.png" width="84" height="101"
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/chicken-1000.png" width="84" height="101"
               alt="Cat Energy PRO 1000 г">
             <p class="product__title">Cat Energy PRO 1000 г</p>
             <div class="product__characteristics">
@@ -126,8 +125,8 @@
             </div>
             <button class="product__purchase button" type="button">заказать</button>
           </li>
-          <li class="catalog__item product catalog__item--fish-500">
-            <img class="product__image" src="../images/fish-500.png" width="68" height="78" alt="Cat Energy PRO 500 г">
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/fish-500.png" width="68" height="78" alt="Cat Energy PRO 500 г">
             <p class="product__title">Cat Energy PRO 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -147,8 +146,8 @@
             </div>
             <button class="product__purchase button" type="button">заказать</button>
           </li>
-          <li class="catalog__item product catalog__item--fish-1000">
-            <img class="product__image" src="../images/fish-1000.png" width="84" height="101"
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/fish-1000.png" width="84" height="101"
               alt="Cat Energy PRO 1000 г">
             <p class="product__title">Cat Energy PRO 1000 г</p>
             <div class="product__characteristics">
@@ -169,8 +168,8 @@
             </div>
             <button class="product__purchase button" type="button">заказать</button>
           </li>
-          <li class="catalog__item product catalog__item--buckwheat-500">
-            <img class="product__image" src="../images/buckwheat-500.png" width="68" height="78"
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/buckwheat-500.png" width="68" height="78"
               alt="Cat Energy slim 500 г">
             <p class="product__title">Cat Energy slim 500 г</p>
             <div class="product__characteristics">
@@ -191,8 +190,8 @@
             </div>
             <button class="product__purchase button" type="button">заказать</button>
           </li>
-          <li class="catalog__item product catalog__item--buckwheat-1000">
-            <img class="product__image" src="../images/buckwheat-1000.png" width="84" height="100"
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/buckwheat-1000.png" width="84" height="100"
               alt="Cat Energy slim 1000 г">
             <p class="product__title">Cat Energy slim 1000 г</p>
             <div class="product__characteristics">
@@ -213,8 +212,8 @@
             </div>
             <button class="product__purchase button" type="button">заказать</button>
           </li>
-          <li class="catalog__item product catalog__item--rice-500">
-            <img class="product__image" src="../images/rice-500.png" width="72" height="84" alt="Cat Energy slim 500 г">
+          <li class="catalog__item product">
+            <img class="product__image" src="/images/rice-500.png" width="72" height="84" alt="Cat Energy slim 500 г">
             <p class="product__title">Cat Energy slim 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -240,7 +239,6 @@
             <button class="show-more__button button" type="button">показать все</button>
           </li>
         </ul>
-      </div>
     </section>
     <section class="additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
@@ -287,19 +285,17 @@
       </aside>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
         <section class="main-footer__invitation invitation">
-          <div class="invitation__wrapper">
             <h6 class="invitation__title">приглашаем к сотрудничеству дилеров!</h6>
             <address class="invitation__address">ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург</address>
-          </div>
           <iframe>
             карта
           </iframe>
         </section>
         <div class="main-footer__logo-name">
+        <a class="main-footer__logo-name-link" href="index.html">
           <svg class="main-footer__logo-name-icon logo-name-icon" width="101" height="18" viewBox="0 0 101 18"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="#111">
@@ -312,7 +308,8 @@
               </clipPath>
             </defs>
           </svg>
-        </div>
+        </a>
+      </div>
         <div class="main-footer__social social">
           <span class="visually-hidden">Ссылки на социальные сети.</span>
           <ul class="social__list">
@@ -363,7 +360,6 @@
             <span class="visually-hidden">Сайт разработчика.</span>
           </a>
         </div>
-      </div>
     </footer>
   </main>
 </body>
