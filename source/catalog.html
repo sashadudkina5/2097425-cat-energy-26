@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -82,8 +83,10 @@
       <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item product">
-            <img class="product__image" src="images/chiken-500.png" width="68" height="86"
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/chiken-500.png" width="68" height="86"
               alt="Cat Energy PRO 500 г">
+              <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy PRO 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -101,11 +104,15 @@
                 </div>
               </dl>
             </div>
-            <a class="product__purchase">заказать</a>
+          </div>
+          </div>
+          <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/chicken-1000.png" width="84" height="101"
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/chicken-1000.png" width="84" height="101"
               alt="Cat Energy PRO 1000 г">
+              <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy PRO 1000 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -123,10 +130,14 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+        </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/fish-500.png" width="68" height="78" alt="Cat Energy PRO 500 г">
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/fish-500.png" width="68" height="78" alt="Cat Energy PRO 500 г">
+            <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy PRO 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -144,11 +155,15 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+        </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/fish-1000.png" width="84" height="101"
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/fish-1000.png" width="84" height="101"
               alt="Cat Energy PRO 1000 г">
+              <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy PRO 1000 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -166,11 +181,15 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+        </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/buckwheat-500.png" width="68" height="78"
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/buckwheat-500.png" width="68" height="78"
               alt="Cat Energy slim 500 г">
+              <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy slim 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -188,11 +207,15 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+        </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/buckwheat-1000.png" width="84" height="100"
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/buckwheat-1000.png" width="84" height="100"
               alt="Cat Energy slim 1000 г">
+              <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy slim 1000 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -210,10 +233,14 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+            </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="images/rice-500.png" width="72" height="84" alt="Cat Energy slim 500 г">
+            <div class="product__info-wrapper">
+            <img class="product__image" src="img/rice-500.png" width="72" height="84" alt="Cat Energy slim 500 г">
+            <div class="product__characteristics-wrapper">
             <p class="product__title">Cat Energy slim 500 г</p>
             <div class="product__characteristics">
               <dl class="product__characteristics-list">
@@ -231,7 +258,9 @@
                 </div>
               </dl>
             </div>
-            <button class="product__purchase button" type="button">заказать</button>
+          </div>
+            </div>
+            <a class="product__purchase button" type="button">заказать</a>
           </li>
           <li class="catalog__item--more show-more">
             <p class="show-more__title">Показать еще 100500 товаров</p>
@@ -250,7 +279,7 @@
               <dt class="additional-products__characteristics-property">1 упаковка (100 г)</dt>
               <dd class="additional-products__characteristics-value">200 Р.</dd>
             </dl>
-            <button class="additional-products__purchase-button button" type="button">заказать</button>
+            <a class="additional-products__purchase-button button" type="button">заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__name">питьевая вода</p>
@@ -258,7 +287,7 @@
               <dt class="additional-products__characteristics-property">5 литров</dt>
               <dd class="additional-products__characteristics-value">50 Р.</dd>
             </dl>
-            <button class="additional-products__purchase-button button" type="button">заказать</button>
+            <a class="additional-products__purchase-button button" type="button">заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__name">молоко</p>
@@ -266,7 +295,7 @@
               <dt class="additional-products__characteristics-property">1 литр</dt>
               <dd class="additional-products__characteristics-value">100 Р.</dd>
             </dl>
-            <button class="additional-products__purchase-button button" type="button">заказать</button>
+            <a class="additional-products__purchase-button button" type="button">заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__name">витамины</p>
@@ -274,7 +303,7 @@
               <dt class="additional-products__characteristics-property">1 упаковка (30 г)</dt>
               <dd class="additional-products__characteristics-value">300 Р.</dd>
             </dl>
-            <button class="additional-products__purchase-button button" type="button">заказать</button>
+            <a class="additional-products__purchase-button button" type="button">заказать</a>
           </li>
         </ul>
       </div>
@@ -286,10 +315,12 @@
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation">
+          <div class="invitation__wrapper">
             <h3 class="invitation__title">приглашаем к сотрудничеству дилеров!</h3>
             <address class="invitation__address">ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург</address>
+            </div>
           <iframe>
             карта
           </iframe>
@@ -349,8 +380,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="social__copyright copyright-name" href="htmlacademy.ru">HTML Academy</a>
-          <a class="social__copyright copyright-logo" href="htmlacademy.ru">
+          <a class="copyright__footer copyright-name" href="htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__footer copyright-logo" href="htmlacademy.ru">
             <svg class="copyright-logo__icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
