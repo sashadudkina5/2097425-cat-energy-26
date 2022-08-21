@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="..images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -86,15 +87,15 @@
         <fieldset class="questionnaire__fieldset basic">
           <div class="questionnaire__property basic__wrapper questionnaire__property--name">
             <label class="basic__label" for="name">Имя<em>*</em></label>
-            <input class="basic__input" type="text" placeholder="Барсик" value="" name="name" id="name" required>
+            <input class="basic__input basic__input--name" type="text" placeholder="Барсик" value="" name="name" id="name" required>
           </div>
           <div class="questionnaire__property basic__wrapper questionnaire__property--weight">
             <label class="basic__label" for="weight">Вес (кг):<em>*</em></label>
-            <input class="basic__input" type="number" placeholder="7" value="" name="weight" id="weight" required>
+            <input class="basic__input basic__input--weight" type="number" placeholder="7" value="" name="weight" id="weight" required>
           </div>
           <div class="questionnaire__property basic__wrapper questionnaire__property--age">
             <label class="basic__label" for="age">Возраст (лет):</label>
-            <input class="basic__input" type="number" placeholder="7" value="" name="age" id="age">
+            <input class="basic__input basic__input--age" type="number" placeholder="7" value="" name="age" id="age">
           </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset aim">
@@ -118,18 +119,18 @@
           </legend>
           <div class="questionnaire__property contacts__wrapper questionnaire__property--email">
             <label class="сontacts__label" for="email">E-mail:<em>*</em></label>
-            <input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" value="" name="email"
+            <input class="contacts__input contacts__input--email" type="email" placeholder="kuklachev@gmail.com" value="" name="email"
               id="email" required>
           </div>
           <div class="questionnaire__property contacts__wrapper questionnaire__property--phone">
             <label class="сontacts__label" for="phone">Телефон:<em>*</em></label>
-            <input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" value="" name="phone" id="phone"
+            <input class="contacts__input contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90" value="" name="phone" id="phone"
               required>
           </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset comments">
           <legend class="comments__legend">Комментарий</legend>
-          <textarea class="comments__legend" name="comments" cols="24"
+          <textarea class="comments__input" name="comments" cols="24"
             rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="questionnaire__fieldset additional">
@@ -152,7 +153,9 @@
           </label>
         </fieldset>
         <button class="questionnaire__button button" type="submit">отправить заявку</button>
+        <div class="questionnaire__required-wrapper">
         <p class="questionnaire__required">* — Обязательные поля</p>
+      </div>
       </form>
     </section>
     <footer class="main-footer">
@@ -220,8 +223,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="social__copyright copyright-name" href="htmlacademy.ru">HTML Academy</a>
-          <a class="social__copyright copyright-logo" href="htmlacademy.ru">
+          <a class="copyright__footer copyright-name" href="htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__footer copyright-logo" href="htmlacademy.ru">
             <svg class="copyright-logo__icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
