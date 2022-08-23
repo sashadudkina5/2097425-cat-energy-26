@@ -7,7 +7,7 @@
 
 .show-more__title {
   font-weight: 400;
-  color: @color-light-black;
+  color: @description-color-3;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
@@ -19,13 +19,13 @@
   font-family: @text-font;
   font-size: 12px;
   line-height: 16px;
-  color: @color-dark-grey;
+  color: @description-main-color;
   margin: 0;
   margin-bottom: 21px;
 }
 
 .show-more__button {
-  background-color: @color-light-grey;
+  background-color: @block-background-color-2;
   border: none;
   font-family: @main-font;
   font-weight: 400;
@@ -36,4 +36,54 @@
   width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.show-more__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .show-more__title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .show-more__description {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+
+  .show-more__button {
+    width: 249px;
+  }
+
+  .show-more {
+    border: 2px solid @block-background-color-2;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .show-more__title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .show-more__description {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+
+  .show-more__button {
+    width: 169px;
+  }
+
+  .show-more {
+    border: 2px solid @block-background-color-2;
+  }
 }

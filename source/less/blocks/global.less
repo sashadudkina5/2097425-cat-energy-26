@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,9 +19,9 @@
 body {
   font-family: @main-font;
   margin: 0;
-  width: 320px;
-  background-color: @color-white;
-  color: @color-black;
+  min-width: 320px;
+  background-color: @main-theme-color;
+  color: @main-text-color;
 }
 
 .visually-hidden {
@@ -33,4 +33,8 @@ body {
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }

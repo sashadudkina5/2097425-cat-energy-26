@@ -20,5 +20,32 @@
   line-height: 18px;
   font-family: @main-font;
   text-transform: uppercase;
-  color: @color-dark-grey-2;
+  color: @description-main-color-2;
+}
+
+@media (min-width: @tablet-width) {
+  .aim {
+    border: 1px solid @color-border-form;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .aim {
+    border: 1px solid @color-border-form;
+    padding-left: 28px;
+    padding-top: 25px;
+    height: 200px;
+  }
+
+  .aim__label-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .aim__label {
+    &:not(:last-of-type) {
+      margin-bottom: 18px;
+    }
+  }
 }

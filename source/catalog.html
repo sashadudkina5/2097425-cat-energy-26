@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+  <div class="page-container">
   <header class="main-header">
     <a class="main-header__logo logo-image" href="index.html">
       <span class="visually-hidden">Логотип Кэт Энерджи. Переход на главную страницу.</span>
@@ -263,9 +265,11 @@
             <a class="product__purchase button" href="#">заказать</a>
           </li>
           <li class="catalog__item--more show-more">
+            <div class="show-more__wrapper">
             <p class="show-more__title">Показать еще 100500 товаров</p>
             <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
             <button class="show-more__button button" type="button">показать все</button>
+          </div>
           </li>
         </ul>
     </section>
@@ -306,12 +310,12 @@
             <a class="additional-products__purchase-button button" href="#">заказать</a>
           </li>
         </ul>
-      </div>
       <aside class="gift">
         <p class="gift__description">Закажите все
           и получите чехол для
           кота в подарок!</p>
       </aside>
+    </div>
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation">
@@ -325,6 +329,7 @@
             карта
           </iframe>
         </section>
+        <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
         <a class="main-footer__logo-name-link" href="index.html">
           <svg class="main-footer__logo-name-icon logo-name-icon" width="101" height="18" viewBox="0 0 101 18"
@@ -391,7 +396,9 @@
             <span class="visually-hidden">Сайт разработчика.</span>
           </a>
         </div>
+      </div>
     </footer>
   </main>
+</div>
 </body>
 </html>

@@ -1,9 +1,7 @@
 .example {
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
   padding-bottom: 40px;
-  background-color: #eaeaea;
+  background-color: @block-background-color;
 }
 
 .example__title {
@@ -12,7 +10,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: @color-black;
+  color: @main-text-color;
 }
 
 .example__description {
@@ -21,7 +19,7 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
-  color: @color-dark-grey;
+  color: @description-main-color;
 }
 
 .example__results-item {
@@ -47,7 +45,7 @@
 
 .example__results-description {
   margin: 0;
-  color: @color-dark-grey;
+  color: @description-main-color;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -76,4 +74,110 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .example__results-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  .example__costs {
+    margin-bottom: 0;
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .example__results-stats {
+    display: flex;
+    column-gap: 42px;
+  }
+
+  .example__visually {
+    text-align: center;
+  }
+
+  .example__before-after-wrapper {
+    padding-right: 80px;
+    padding-left: 80px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .example__title {
+    margin: 0;
+    margin-bottom: 146px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 70px;
+  }
+
+  .example__results-wrapper {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+
+  .example__costs {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+  }
+
+  .example__results-stats {
+    display: flex;
+    padding-right: 234px;
+    padding-left: 57px;
+  }
+
+  .example__visually {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+  }
+
+  .example__before-after-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 592px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .example {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__wrapper-main {
+    width: 620px;
+  }
 }

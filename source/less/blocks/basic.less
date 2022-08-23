@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: @color-dark-grey;
+  color: @description-main-color;
   text-transform: uppercase;
 }
 
@@ -24,7 +24,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: @color-dark-grey;
+  color: @description-main-color;
   text-transform: uppercase;
   font-family: @main-font;
   padding-top: 13px;
@@ -43,5 +43,37 @@
 
   &--age {
     width: 172px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .basic__input {
+    &--name {
+      width: 567px;
+    }
+
+    &--weight {
+      width: 536px;
+    }
+
+    &--age {
+      width: 497px;
+    }
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .basic__input {
+    &--name {
+      width: 506px;
+    }
+
+    &--weight {
+      width: 475px;
+    }
+
+    &--age {
+      width: 436px;
+    }
   }
 }

@@ -1,14 +1,12 @@
 .main-section {
-  background: linear-gradient(to bottom, @color-basic-green, @color-white);
+  background: linear-gradient(to bottom, @additional-theme-color, @main-theme-color);
   text-align: center;
   background-image: url("../img/main-section-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
   padding-top: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: @color-white;
+  color: @main-theme-color;
 }
 
 .main-section__title {
@@ -21,6 +19,7 @@
 
 .main-section__slogan {
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
@@ -34,12 +33,82 @@
 }
 
 .main-section__choose-program-button {
-  color: @color-white;
+  color: @main-theme-color;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   display: block;
-  background-color: @color-basic-green;
+  background-color: @additional-theme-color;
   padding: 7px 44px;
+  width: 280px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-section {
+    background-image: none;
+    text-align: left;
+    padding-left: 87px;
+    position: relative;
+  }
+
+  .main-section__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @main-text-color;
+  }
+
+  .main-section__slogan {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: @main-text-color;
+  }
+
+  .main-section__choose-program-button {
+    width: 244px;
+    position: absolute;
+    top: 230px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .main-section {
+    background-position: right;
+    background-image: url("../img/main-section-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    padding-left: 80px;
+    position: relative;
+  }
+
+  .main-section__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: @main-text-color;
+  }
+
+  .main-section__slogan {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: @main-text-color;
+  }
+
+  .main-section__choose-program-button {
+    width: 244px;
+    position: absolute;
+    top: 150px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
 }

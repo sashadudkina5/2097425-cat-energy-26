@@ -5,10 +5,18 @@
 }
 
 .copyright-name {
-  color: @color-dark-grey;
+  color: @description-main-color;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   font-family: @text-font;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+  <div class="page-container">
   <header class="main-header">
     <a class="main-header__logo logo-image" href="index.html">
       <span class="visually-hidden">Логотип Кэт Энерджи. Переход на главную страницу.</span>
@@ -84,6 +86,7 @@
       <p class="questionnaire__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="questionnaire__wrapper-basic-and-aim">
         <fieldset class="questionnaire__fieldset basic">
           <div class="questionnaire__property basic__wrapper questionnaire__property--name">
             <label class="basic__label" for="name">Имя<em>*</em></label>
@@ -112,11 +115,13 @@
             <span class="aim__label-name">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
+      </div>
         <fieldset class="questionnaire__fieldset contacts">
           <legend class="contacts__legend">
             Контактные данные
             (владельца кота)
           </legend>
+          <div class="contacts__properties-container">
           <div class="questionnaire__property contacts__wrapper questionnaire__property--email">
             <label class="сontacts__label" for="email">E-mail:<em>*</em></label>
             <input class="contacts__input contacts__input--email" type="email" placeholder="kuklachev@gmail.com" value="" name="email"
@@ -127,6 +132,7 @@
             <input class="contacts__input contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90" value="" name="phone" id="phone"
               required>
           </div>
+        </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset comments">
           <legend class="comments__legend">Комментарий</legend>
@@ -135,6 +141,7 @@
         </fieldset>
         <fieldset class="questionnaire__fieldset additional">
           <legend class="additional__legend">Дополнительно</legend>
+          <div class="additional__wrapper">
           <label class="additional__label">
             <input class="additional__input" type="checkbox" id="sweetener" name="additional-product" value="sweetener" checked>
             <span class="additional__label-name">сахарозаменитель</span>
@@ -151,23 +158,28 @@
             <input class="additional__input" type="checkbox" id="vitamins" name="additional-product" value="vitamins">
             <span class="additional__label-name">витамины</span>
           </label>
+        </div>
         </fieldset>
+        <div class="questionnaire__submit-wrapper">
         <button class="questionnaire__button button" type="submit">отправить заявку</button>
-        <div class="questionnaire__required-wrapper">
         <p class="questionnaire__required">* — Обязательные поля</p>
       </div>
+    </div>
       </form>
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation invitation--form-page">
+          <div class="invitation__wrapper">
             <h2 class="invitation__title">приглашаем к сотрудничеству дилеров!</h2>
             <address class="invitation__address">ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург</address>
+            </div>
           <iframe>
             карта
           </iframe>
         </section>
+        <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
         <a class="main-footer__logo-name-link" href="index.html">
           <svg class="main-footer__logo-name-icon logo-name-icon" width="101" height="18" viewBox="0 0 101 18"
@@ -234,5 +246,9 @@
             <span class="visually-hidden">Сайт разработчика.</span>
           </a>
         </div>
+      </div>
     </footer>
   </main>
+</div>
+</body>
+</html>

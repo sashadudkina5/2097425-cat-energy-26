@@ -1,6 +1,4 @@
 .how-it-works {
-  padding-right: 22px;
-  padding-left: 21px;
   padding-bottom: 49px;
 }
 
@@ -53,7 +51,103 @@
 .how-it-works__description {
   font-size: 14px;
   line-height: 18px;
-  color: @color-dark-grey;
+  color: @description-main-color;
   font-family: "Arial'", sans-serif;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .how-it-works__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  .how-it-works__item {
+    padding-left: 0;
+    padding-top: 151px;
+    margin-bottom: 0;
+    height: 280px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+
+    &--nutrients {
+      background-image: url("../img/nutrients.svg"), url("../img/1.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--preparing {
+      background-image: url("../img/preparing.svg"), url("../img/2.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--usage {
+      background-image: url("../img/usage.svg"), url("../img/3.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--outcome {
+      background-image: url("../img/outcome.svg"), url("../img/4.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .how-it-works__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    align-items: center;
+    column-gap: 94px;
+  }
+
+  .how-it-works__item {
+    padding-left: 0;
+    padding-top: 151px;
+    margin-bottom: 0;
+    height: 280px;
+    width: 230px;
+
+    &--nutrients {
+      background-image: url("../img/nutrients.svg"), url("../img/1.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--preparing {
+      background-image: url("../img/preparing.svg"), url("../img/2.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--usage {
+      background-image: url("../img/usage.svg"), url("../img/3.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+
+    &--outcome {
+      background-image: url("../img/outcome.svg"), url("../img/4.svg");
+      background-repeat: no-repeat;
+      background-position: 0 40px, 118px 40px;
+    }
+  }
 }
