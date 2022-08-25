@@ -28,3 +28,40 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .additional__wrapper {
+    display: grid;
+    grid-template-columns: 282px 282px;
+    column-gap: 60px;
+    row-gap: 32px;
+  }
+
+  .additional__label:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .additional__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 104px;
+  }
+
+  .additional__label {
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .additional__label-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

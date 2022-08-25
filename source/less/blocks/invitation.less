@@ -1,6 +1,6 @@
 .invitation {
   &--main {
-    background-color: @color-white;
+    background-color: @main-theme-color;
   }
 }
 
@@ -12,7 +12,7 @@
 
 .invitation__title {
   text-transform: uppercase;
-  color: @color-light-black;
+  color: @description-color-3;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -20,9 +20,28 @@
 }
 
 .invitation__address {
-  color: @color-dark-grey;
+  color: @description-main-color;
   font-size: 14px;
   line-height: 20px;
   font-family: @text-font;
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__wrapper {
+    justify-content: space-between;
+    height: 200px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .invitation__wrapper {
+    background-color: @main-theme-color;
+    justify-content: space-between;
+    width: 565px;
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-bottom: 56px;
+  }
 }

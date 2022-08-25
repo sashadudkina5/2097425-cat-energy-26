@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+  <div class="page-container">
   <header class="main-header">
     <a class="main-header__logo logo-image">
       <span class="visually-hidden">Логотип Кэт Энерджи. Переход на главную страницу.</span>
@@ -121,6 +123,7 @@
         </ol>
     </section>
     <section class="example">
+      <div class="example__wrapper-main">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
           Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
@@ -136,8 +139,9 @@
               <dd class="example__results-description">затрачено времени</dd>
             </div>
           </dl>
-        </div>
         <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
+      </div>
+    </div>
         <div class="example__visually">
           <img class="example__image" src="img/example-before.png" width="280" height="232"
             alt="Фото кота Бориса.">
@@ -160,6 +164,7 @@
             карта
           </iframe>
         </section>
+        <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
           <svg class="main-footer__logo-name-icon logo-name-icon" width="101" height="18" viewBox="0 0 101 18"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +229,9 @@
             <span class="visually-hidden">Сайт разработчика.</span>
           </a>
         </div>
+      </div>
     </footer>
   </main>
+</div>
 </body>
 </html>

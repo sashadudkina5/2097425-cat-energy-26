@@ -1,7 +1,5 @@
 .programs {
   padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .programs__list {
@@ -11,7 +9,7 @@
 }
 
 .programs__item {
-  background-color: @color-light-grey;
+  background-color: @block-background-color-2;
   margin-bottom: 20px;
 
   &--slim {
@@ -38,7 +36,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: @color-black;
+  color: @main-text-color;
   font-family: inherit;
   margin: 0;
   font-weight: 400;
@@ -47,7 +45,7 @@
 }
 
 .programs__description {
-  color: @color-dark-grey;
+  color: @description-main-color;
   font-family: "Arial'", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -61,5 +59,60 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: @color-black;
+  color: @main-text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__item-wrapper {
+    padding-left: 52px;
+    padding-right: 316px;
+    padding-bottom: 53px;
+    padding-top: 77px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: @main-text-color;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item-wrapper {
+    padding-right: 51px;
+    padding-left: 52px;
+    padding-bottom: 55px;
+    padding-top: 77px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: @main-text-color;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 73px;
+    margin-left: 162px;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+    width: 570px;
+  }
 }

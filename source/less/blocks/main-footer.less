@@ -1,5 +1,5 @@
 .main-footer {
-  background-color: @color-light-grey;
+  background-color: @block-background-color-2;
 }
 
 .main-footer__logo-name {
@@ -10,8 +10,6 @@
 
 .main-footer__invitation {
   padding-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .main-footer__social {
@@ -24,4 +22,21 @@
   padding-right: 20px;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 147px;
+  }
+
+  .copyright__footer:not(:last-of-type) {
+    margin-right: 22px;
+  }
+
+  .main-footer__copyright {
+    padding-right: 0;
+  }
 }

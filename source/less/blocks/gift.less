@@ -4,7 +4,6 @@
   background-image: url("../img/gift-background.jpg");
   background-repeat: no-repeat;
   height: 290px;
-  text-align: center;
   padding-right: 60px;
   padding-left: 60px;
   display: flex;
@@ -17,7 +16,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: @color-white;
+  color: @main-theme-color;
   margin-bottom: 43px;
   position: relative;
 
@@ -28,5 +27,54 @@
     height: 80px;
     top: -128px;
     left: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    margin-top: 69px;
+    margin-bottom: 35px;
+    width: 100%;
+    background-size: cover;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .gift__description {
+    margin-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: url("../img/icon_gift.svg");
+      position: absolute;
+      width: 78px;
+      height: 80px;
+      top: -30px;
+      left: -150px;
+    }
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .gift {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 245px;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+
+  .gift__description {
+    margin-bottom: 42px;
+    position: relative;
+
+    &::before {
+      content: url("../img/icon_gift.svg");
+      position: absolute;
+      width: 78px;
+      height: 80px;
+      top: -129px;
+      left: 20px;
+    }
   }
 }
