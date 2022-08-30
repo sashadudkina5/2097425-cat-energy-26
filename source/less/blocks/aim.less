@@ -4,6 +4,19 @@
   padding: 0;
   padding-top: 22px;
   padding-bottom: 19px;
+  position: relative;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      background-color: @color-border-decoration-additional;
+      width: 320px;
+      height: 1px;
+      bottom: 0;
+      left: -20px;
+    }
+  }
 }
 
 .aim__label {
@@ -20,13 +33,18 @@
   line-height: 18px;
   font-family: @main-font;
   text-transform: uppercase;
-  color: @description-color-2;
+  color: @description-color-additional;
 }
 
 @media (min-width: @tablet-width) {
   .aim {
     border: 1px solid @color-border-form;
     padding-left: 30px;
+  }
+
+  .aim__label-name {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

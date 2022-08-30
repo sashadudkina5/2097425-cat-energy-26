@@ -2,14 +2,30 @@
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      background-color: @color-border-decoration-additional;
+      width: 320px;
+      height: 1px;
+      bottom: 0;
+      left: -20px;
+    }
+  }
 }
 
 .basic__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
 }
 
 .basic__label {
@@ -30,6 +46,7 @@
   padding-top: 13px;
   padding-left: 14px;
   padding-bottom: 14px;
+  padding-right: 20px;
   border: 1px solid @color-border-form;
   box-sizing: border-box;
 
@@ -47,7 +64,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .basic {
+    padding-bottom: 72px;
+  }
+
   .basic__input {
+    font-size: 20px;
+    line-height: 30px;
+
     &--name {
       width: 567px;
     }
@@ -58,6 +82,17 @@
 
     &--age {
       width: 497px;
+    }
+  }
+
+  .basic__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .basic__wrapper {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
     }
   }
 }
@@ -75,5 +110,9 @@
     &--age {
       width: 436px;
     }
+  }
+
+  .basic {
+    padding-bottom: 0;
   }
 }

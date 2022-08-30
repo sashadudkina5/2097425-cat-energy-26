@@ -8,11 +8,14 @@
   display: flex;
   align-items: center;
   padding-bottom: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 26px;
 }
 
 .invitation__title {
   text-transform: uppercase;
-  color: @description-color-3;
+  color: @description-color-extra;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -27,14 +30,41 @@
   font-style: normal;
 }
 
+.invitation__map {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 362px;
+}
+
 @media (min-width: @tablet-width) {
   .invitation__wrapper {
     justify-content: space-between;
-    height: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .invitation__map {
+    width: 100%;
+    height: 400px;
+  }
+
+  .invitation__title {
+    width: 172px;
+  }
+
+  .invitation__address {
+    width: 160px;
   }
 }
 
 @media (min-width: @dekstop-width) {
+  .invitation {
+    position: relative;
+  }
+
   .invitation__wrapper {
     background-color: @main-theme-color;
     justify-content: space-between;
@@ -43,5 +73,12 @@
     padding-top: 60px;
     padding-right: 80px;
     padding-bottom: 56px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+
+  .invitation__map {
+    width: 100%;
   }
 }

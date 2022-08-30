@@ -11,6 +11,19 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 99px;
+      height: 2px;
+      top: 15px;
+      right: -20px;
+    }
+  }
 }
 
 .contacts__wrapper {
@@ -43,18 +56,29 @@
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 15px;
+  padding-right: 20px;
 
   &--phone {
     width: 204px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
   }
 
   &--email {
     width: 219px;
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
   }
 }
 
 @media (min-width: @tablet-width) {
   .contacts__input {
+    padding-right: 55px;
+    font-size: 20px;
+    line-height: 30px;
+
     &--phone {
       width: 535px;
     }
@@ -63,7 +87,52 @@
       width: 551px;
     }
   }
+
+  .contacts {
+    padding-bottom: 65px;
+    margin-top: 71px;
+  }
+
+  .contacts__legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 145px;
+      height: 2px;
+      top: 20px;
+      right: -172px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 30px;
+      height: 2px;
+      top: 20px;
+      left: -55px;
+    }
+  }
+
+
+  .сontacts__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
 }
+
 
 @media (min-width: @dekstop-width) {
   .contacts__properties-container {
@@ -91,5 +160,29 @@
 
   .contacts {
     padding-bottom: 69px;
+  }
+
+  .contacts__legend {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 778px;
+      height: 2px;
+      top: 20px;
+      right: -820px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 70px;
+      height: 2px;
+      top: 20px;
+      left: -100px;
+    }
   }
 }
