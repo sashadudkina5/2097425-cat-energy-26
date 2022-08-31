@@ -1,5 +1,7 @@
 .programs {
   padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .programs__list {
@@ -9,7 +11,7 @@
 }
 
 .programs__item {
-  background-color: @block-background-color-2;
+  background-color: @block-background-color-additional;
   margin-bottom: 20px;
 
   &--slim {
@@ -60,13 +62,22 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @main-text-color;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .programs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .programs__item-wrapper {
     padding-left: 52px;
     padding-right: 316px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-top: 77px;
   }
 
@@ -84,9 +95,20 @@
   .programs__item {
     margin-bottom: 30px;
   }
+
+  .programs__select-program {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: @dekstop-width) {
+  .programs {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 82px;
+  }
+
   .programs__list {
     display: flex;
     justify-content: space-between;
@@ -112,7 +134,7 @@
   }
 
   .programs__item {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     width: 570px;
   }
 }

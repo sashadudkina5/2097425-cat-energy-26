@@ -3,11 +3,15 @@
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 50% 25px;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @color-border-decoration-additional;
+  }
 }
 
 .show-more__title {
   font-weight: 400;
-  color: @description-color-3;
+  color: @description-color-extra;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
@@ -25,7 +29,7 @@
 }
 
 .show-more__button {
-  background-color: @block-background-color-2;
+  background-color: @block-background-color-additional;
   border: none;
   font-family: @main-font;
   font-weight: 400;
@@ -36,6 +40,15 @@
   width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover {
+    background-color: @color-button-hover-additional;
+  }
+
+  &:active {
+    color: fade(@description-main-color, 30%);
+    background-color: @color-button-hover-additional;
+  }
 }
 
 .show-more__wrapper {
@@ -62,7 +75,7 @@
   }
 
   .show-more {
-    border: 2px solid @block-background-color-2;
+    border: 2px solid @block-background-color-additional;
   }
 }
 
@@ -84,6 +97,6 @@
   }
 
   .show-more {
-    border: 2px solid @block-background-color-2;
+    border: 2px solid @block-background-color-additional;
   }
 }

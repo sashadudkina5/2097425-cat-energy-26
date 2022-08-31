@@ -2,6 +2,8 @@
   padding-top: 25px;
   padding-bottom: 40px;
   background-color: @block-background-color;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__title {
@@ -34,6 +36,8 @@
   padding: 0;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .example__results-number {
@@ -50,6 +54,11 @@
   line-height: 12px;
   font-weight: 400;
   font-family: @text-font;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    max-width: 77px;
+  }
 }
 
 .example__costs {
@@ -77,6 +86,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(to bottom, @main-theme-color 50%, @block-background-color 50%);
+  }
+
   .example__title {
     margin: 0;
     margin-bottom: 63px;
@@ -103,7 +118,7 @@
     width: 174px;
     font-size: 20px;
     line-height: 20px;
-    text-align: left;
+    text-align: right;
   }
 
   .example__results-stats {
@@ -124,6 +139,15 @@
 }
 
 @media (min-width: @dekstop-width) {
+  .example {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, @main-theme-color 30%, @block-background-color-additional 30%);
+  }
+
   .example__title {
     margin: 0;
     margin-bottom: 146px;
@@ -134,26 +158,30 @@
 
   .example__description {
     margin-bottom: 70px;
+    display: block;
+    max-width: 436px;
   }
 
   .example__results-wrapper {
     display: block;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .example__costs {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
-    width: auto;
+    width: 436px;
+    text-align: left;
   }
 
   .example__results-stats {
     display: flex;
     padding-right: 234px;
     padding-left: 57px;
+    margin-bottom: 55px;
   }
 
   .example__visually {
@@ -170,11 +198,6 @@
     width: 592px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .example {
-    display: flex;
-    justify-content: space-between;
   }
 
   .example__wrapper-main {

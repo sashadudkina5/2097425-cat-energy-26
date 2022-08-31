@@ -57,7 +57,7 @@
         </defs>
       </svg>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="main-nav__container">
         <ul class="main-nav__list site-list">
@@ -83,8 +83,8 @@
   <main class="main-container">
     <section class="questionnaire">
       <h1 class="questionnaire__title">Подбор программы</h1>
-      <p class="questionnaire__description">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
+      <p class="questionnaire__description">Заполните анкету, и&nbsp;мы подберем
+        программу питания для&nbsp;вашего кота</p>
       <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="questionnaire__wrapper-basic-and-aim">
         <fieldset class="questionnaire__fieldset basic">
@@ -112,7 +112,7 @@
           </label>
           <label class="aim__label">
             <input class="aim__input" type="radio" id="no-aim" name="target-aim" value="no-aim">
-            <span class="aim__label-name">Не знаю (Нужен ваш совет)</span>
+            <span class="aim__label-name">Не&nbsp;знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
       </div>
@@ -162,22 +162,22 @@
         </fieldset>
         <div class="questionnaire__submit-wrapper">
         <button class="questionnaire__button button" type="submit">отправить заявку</button>
-        <p class="questionnaire__required">* — Обязательные поля</p>
+        <p class="questionnaire__required">*&nbsp;—&nbsp;Обязательные поля</p>
       </div>
-    </div>
       </form>
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation invitation--form-page">
           <div class="invitation__wrapper">
-            <h2 class="invitation__title">приглашаем к сотрудничеству дилеров!</h2>
-            <address class="invitation__address">ул. Большая
-              Конюшенная, д. 19/8
+            <h2 class="invitation__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <address class="invitation__address">ул.&nbsp;Большая
+              Конюшенная, д.&nbsp;19/8
               Санкт-Петербург</address>
             </div>
-          <iframe>
-            карта
-          </iframe>
+            <iframe class="invitation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716319485!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661603077828!5m2!1sru!2sru"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              карта
+            </iframe>
         </section>
         <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
@@ -250,5 +250,6 @@
     </footer>
   </main>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

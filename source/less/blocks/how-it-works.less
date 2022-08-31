@@ -1,5 +1,7 @@
 .how-it-works {
   padding-bottom: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .how-it-works__title {
@@ -24,25 +26,25 @@
   }
 
   &--nutrients {
-    background-image: url("../img/nutrients.svg");
+    background-image: @nutrients-icon;
     background-repeat: no-repeat;
     background-position: left;
   }
 
   &--preparing {
-    background-image: url("../img/preparing.svg");
+    background-image: @preparing-icon;
     background-repeat: no-repeat;
     background-position: left;
   }
 
   &--usage {
-    background-image: url("../img/usage.svg");
+    background-image: @usage-icon;
     background-repeat: no-repeat;
     background-position: left;
   }
 
   &--outcome {
-    background-image: url("../img/outcome.svg");
+    background-image: @outcome-icon;
     background-repeat: no-repeat;
     background-position: left;
   }
@@ -57,6 +59,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .how-it-works {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+
   .how-it-works__title {
     font-size: 60px;
     line-height: 60px;
@@ -74,32 +82,32 @@
     padding-left: 0;
     padding-top: 151px;
     margin-bottom: 0;
-    height: 280px;
+    padding-bottom: 57px;
 
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
 
     &--nutrients {
-      background-image: url("../img/nutrients.svg"), url("../img/1.svg");
+      background-image: @nutrients-icon, @how-it-works-first-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--preparing {
-      background-image: url("../img/preparing.svg"), url("../img/2.svg");
+      background-image: @preparing-icon, @how-it-works-second-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--usage {
-      background-image: url("../img/usage.svg"), url("../img/3.svg");
+      background-image: @usage-icon, @how-it-works-third-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--outcome {
-      background-image: url("../img/outcome.svg"), url("../img/4.svg");
+      background-image: @outcome-icon, @how-it-works-fourth-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
@@ -107,6 +115,12 @@
 }
 
 @media (min-width: @dekstop-width) {
+  .how-it-works {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 71px;
+  }
+
   .how-it-works__title {
     font-size: 60px;
     line-height: 60px;
@@ -123,29 +137,29 @@
     padding-left: 0;
     padding-top: 151px;
     margin-bottom: 0;
-    height: 280px;
+    padding-bottom: 57px;
     width: 230px;
 
     &--nutrients {
-      background-image: url("../img/nutrients.svg"), url("../img/1.svg");
+      background-image: @nutrients-icon, @how-it-works-first-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--preparing {
-      background-image: url("../img/preparing.svg"), url("../img/2.svg");
+      background-image: @preparing-icon, @how-it-works-second-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--usage {
-      background-image: url("../img/usage.svg"), url("../img/3.svg");
+      background-image: @usage-icon, @how-it-works-third-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }
 
     &--outcome {
-      background-image: url("../img/outcome.svg"), url("../img/4.svg");
+      background-image: @outcome-icon, @how-it-works-fourth-step;
       background-repeat: no-repeat;
       background-position: 0 40px, 118px 40px;
     }

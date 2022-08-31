@@ -9,6 +9,19 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 34px;
+  position: relative;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 136px;
+      height: 2px;
+      top: 15px;
+      right: -155px;
+    }
+  }
 }
 
 .additional__label {
@@ -40,6 +53,38 @@
   .additional__label:not(:last-of-type) {
     margin-bottom: 0;
   }
+
+  .additional__legend {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 55px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 446px;
+      height: 2px;
+      top: 20px;
+      right: -480px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 30px;
+      height: 2px;
+      top: 20px;
+      left: -55px;
+    }
+  }
+
+  .additional__label-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: @dekstop-width) {
@@ -63,5 +108,29 @@
   .additional__label-name {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .additional__legend {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 1078px;
+      height: 2px;
+      top: 20px;
+      right: -1120px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: @additional-theme-color;
+      width: 70px;
+      height: 2px;
+      top: 20px;
+      left: -100px;
+    }
   }
 }
