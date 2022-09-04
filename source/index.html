@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" href="favicon-32.ico">
+  <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
@@ -49,7 +52,7 @@
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--main-page">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link site-list__link--main-page">
               Главная
@@ -73,8 +76,12 @@
     <section class="main-section">
         <h1 class="main-section__title">Функциональное питание для&nbsp;котов</h1>
         <p class="main-section__slogan">Занялся собой? Займись котом!</p>
-        <img class="main-section__image" src="img/main-picture-header.png" width="280" height="270"
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-picture-header-dekstop.png 1x, img/main-picture-header-dekstop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/main-picture-header-tablet.png 1x, img/main-picture-header-tablet@2x.png 2x">
+        <img class="main-section__image" src="img/main-picture-header-mobile.png" srcset="img/main-picture-header-mobile@2x.png 2x"
           alt="Упакова Кэт Энерджи.">
+        </picture>
         <a class="main-section__choose-program-button choose-program" href="form.html">Подобрать программу</a>
     </section>
     <section class="programs">
@@ -143,8 +150,12 @@
       </div>
     </div>
         <div class="example__visually">
-          <img class="example__image" src="img/example-before.png" width="280" height="232"
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/example-before-tablet-and-dekstop.png 1x, img/example-before-tablet-and-dekstop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/example-before-tablet-and-dekstop.png 1x, img/example-before-tablet-and-dekstop@2x.png 2x">
+          <img class="example__image" src="img/example-before-mobile.png" srcset="img/example-before-mobile@2x.png 2x"
             alt="Фото кота Бориса.">
+          </picture>
           <div class="example__before-after-wrapper">
             <span class="example__before">Было</span>
             <span class="before-after-rate"></span>
