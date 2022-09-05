@@ -9,6 +9,10 @@
   color: @main-theme-color;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-resolution: @retina) {
+    background-image: url("../img/main-section-background@2x.jpg");
+  }
 }
 
 .main-section__title {
@@ -30,8 +34,6 @@
 
 .main-section__image {
   display: block;
-  width: 280px;
-  height: 270px;
 }
 
 .main-section__choose-program-button {
@@ -61,7 +63,7 @@
   .main-section {
     background-image: none;
     text-align: left;
-    padding-left: 87px;
+    padding-left: 30px;
     position: relative;
     padding-right: 30px;
     padding-top: 62px;
@@ -75,6 +77,7 @@
     display: block;
     width: 420px;
     margin-bottom: 41px;
+    margin-left: 87px;
   }
 
   .main-section__slogan {
@@ -83,15 +86,21 @@
     line-height: 20px;
     color: @main-text-color;
     margin-bottom: 20px;
+    margin-left: 87px;
   }
 
   .main-section__choose-program-button {
     width: 244px;
     position: absolute;
-    top: 270px;
+    top: 290px;
+    left: 120px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
+  }
+
+  .main-section__image {
+    margin: 0 auto;
   }
 }
 
@@ -103,6 +112,7 @@
     padding-left: 190px;
     padding-right: 110px;
     padding-bottom: 54px;
+    min-height: 583px;
   }
 
   .main-section__title {
@@ -111,6 +121,7 @@
     line-height: 60px;
     color: @main-text-color;
     width: 420px;
+    margin-left: 0;
   }
 
   .main-section__slogan {
@@ -118,14 +129,22 @@
     font-size: 20px;
     line-height: 20px;
     color: @main-text-color;
+    margin-left: 0;
   }
 
   .main-section__choose-program-button {
     width: 244px;
     position: absolute;
+    left: 190px;
     top: 290px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 26px;
+  }
+
+  .main-section__image {
+    position: absolute;
+    top: 30px;
+    right: 330px;
   }
 }
