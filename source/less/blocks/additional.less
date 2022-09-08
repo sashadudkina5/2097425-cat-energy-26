@@ -26,9 +26,15 @@
 
 .additional__label {
   display: block;
+  padding-left: 60px;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 46px;
+  }
 
   &:not(:last-of-type) {
-    margin-bottom: 12px;
+    margin-bottom: 25px;
   }
 
   &:last-of-type {
@@ -36,10 +42,48 @@
   }
 }
 
+.additional__input-control-mark {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  @main-theme-colo: #ffffff;
+  left: 0;
+  top: -5px;
+  border: 1px solid @color-catalog-text-decoration;
+
+  @media (max-width: @mobile-width-only) {
+    width: 30px;
+    height: 30px;
+  }
+
+  .additional__input:hover + & {
+    border: 1px solid @color-checkbox-hover;
+  }
+
+  .additional__input:disabled + & {
+    border: 1px solid @color-checkbox-hover;
+    opacity: 0.3;
+  }
+}
+
+.additional__input[type="checkbox"]:checked + .additional__input-control-mark {
+  background-image: url("../img/tablet-dekstop-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../img/mobile-tick.svg");
+  }
+}
+
 .additional__label-name {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  .additional__input:disabled & {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

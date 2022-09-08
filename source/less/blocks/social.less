@@ -13,6 +13,23 @@
   justify-content: center;
 }
 
+.social__link-icon {
+  fill: @color-icons;
+}
+
 .social__item {
   margin-right: 25px;
+}
+
+@media (min-width: @dekstop-width) {
+  .social__link-icon {
+    .social__link:hover & {
+      fill: @additional-theme-color;
+    }
+
+    .social__link:active & {
+      fill: @additional-theme-color;
+      opacity: 0.3;
+    }
+  }
 }

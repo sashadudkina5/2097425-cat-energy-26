@@ -63,6 +63,14 @@
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: 95% 50%;
+
+    &:focus {
+      background-image: url("../img/phone-icon-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/phone-icon-invalid.svg");
+    }
   }
 
   &--email {
@@ -70,6 +78,33 @@
     background-image: url("../img/email-icon.svg");
     background-repeat: no-repeat;
     background-position: 95% 50%;
+
+    &:focus {
+      background-image: url("../img/email-icon-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/email-icon-invalid.svg");
+    }
+  }
+
+  &:hover {
+    border: 1px solid @color-catalog-text-decoration;
+  }
+
+  &:focus {
+    border: 1px solid @description-main-color;
+    outline: 1px solid @description-main-color;
+  }
+
+  &:focus-visible {
+    border: 1px solid @description-main-color;
+    outline: 1px solid @description-main-color;
+  }
+
+  &:invalid {
+    border: 1px solid @color-input-error;
+    outline: 1px solid @color-input-error;
   }
 }
 
@@ -141,7 +176,7 @@
 
   .contacts__input {
     &--phone {
-      width: 486px;
+      width: 472px;
     }
 
     &--email {
