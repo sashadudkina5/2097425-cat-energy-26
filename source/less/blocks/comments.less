@@ -1,8 +1,17 @@
 .comments {
   padding: 0;
-  margin: 0;
   border: none;
   padding-bottom: 23px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: 1220px;
+  }
 }
 
 .comments__legend {

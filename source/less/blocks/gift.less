@@ -3,6 +3,7 @@
   margin-bottom: 35px;
   background-image: url("../img/gift-background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   height: 290px;
   padding-right: 60px;
   padding-left: 60px;
@@ -10,7 +11,17 @@
   align-items: flex-end;
   position: relative;
   padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 
+  @media (min-width: @tablet-width) {
+    width: 707px;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: @dekstop-width;
+  }
 
   @media (min-resolution: @retina) {
     background-image: url("../img/gift-background@2x.jpg");
@@ -39,7 +50,6 @@
 @media (min-width: @tablet-width) {
   .gift {
     margin-bottom: 76px;
-    width: 100%;
     background-size: cover;
     justify-content: end;
     height: 200px;
@@ -71,12 +81,13 @@
     width: 245px;
     height: 289px;
     align-items: flex-end;
-    margin-left: auto;
     position: relative;
     background-size: cover;
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 40px;
+    align-self: center;
+    margin-left: 0;
   }
 
   .gift__description {

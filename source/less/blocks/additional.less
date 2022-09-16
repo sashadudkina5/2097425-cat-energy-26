@@ -1,7 +1,16 @@
 .additional {
   border: none;
-  margin: 0;
   padding: 0;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: 1220px;
+  }
 }
 
 .additional__legend {

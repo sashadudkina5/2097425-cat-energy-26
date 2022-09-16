@@ -1,9 +1,22 @@
 .example {
-  padding-top: 25px;
-  padding-bottom: 40px;
   background-color: @block-background-color;
+}
+
+.example__container {
+  width: 320px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: @dekstop-width;
+  }
 }
 
 .example__title {
@@ -25,7 +38,7 @@
 }
 
 .example__results-item {
-  padding-top: 14px;
+  padding-top: 16px;
   text-align: center;
 }
 
@@ -36,8 +49,8 @@
   padding: 0;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .example__results-number {
@@ -77,8 +90,8 @@
 
 .example__before-after-wrapper {
   display: flex;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 16px;
@@ -86,9 +99,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .example {
+  .example__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .example {
     background: linear-gradient(to bottom, @main-theme-color 50%, @block-background-color 50%);
   }
 
@@ -139,12 +155,15 @@
 }
 
 @media (min-width: @dekstop-width) {
-  .example {
+  .example__container {
     padding-left: 110px;
     padding-right: 110px;
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .example {
     background: linear-gradient(to bottom, @main-theme-color 30%, @block-background-color-additional 30%);
   }
 

@@ -1,39 +1,18 @@
 .page-container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-container {
-    width: @tablet-width;
+    min-width: @tablet-width;
     margin: 0 auto;
   }
 }
 
 @media (min-width: @dekstop-width) {
   .page-container {
-    width: @dekstop-width;
+    min-width: @dekstop-width;
     margin: 0 auto;
-    position: relative;
-
-    &--main::before {
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 694px;
-      right: 0;
-      left: auto;
-      top: 0;
-      background-image: url("../img/dekstop-main-section-background.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: right;
-
-      @media (min-resolution: @retina) {
-        content: "";
-        background-size: contain;
-        background-image: url("../img/dekstop-main-section-background@2x.jpg");
-      }
-    }
   }
 }

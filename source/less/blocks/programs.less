@@ -2,6 +2,16 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: @dekstop-width;
+  }
 }
 
 .programs__list {
@@ -29,7 +39,7 @@
 
 .programs__item-wrapper {
   padding-left: 20px;
-  padding-right: 33px;
+  padding-right: 18px;
   padding-bottom: 18px;
   padding-top: 30px;
 }
@@ -64,7 +74,7 @@
   transition: width 0.5s;
 
   @media (max-width: @mobile-width-only) {
-    right: -35px;
+    right: -32px;
     top: 10px;
   }
 
@@ -89,7 +99,7 @@
   border-color: transparent transparent transparent @main-text-color;
 
   @media (max-width: @mobile-width-only) {
-    right: -40px;
+    right: -38px;
     top: 6px;
   }
 

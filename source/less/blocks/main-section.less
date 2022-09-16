@@ -9,9 +9,41 @@
   color: @main-theme-color;
   padding-left: 20px;
   padding-right: 20px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: @dekstop-width;
+  }
 
   @media (min-resolution: @retina) {
     background-image: url("../img/main-section-background@2x.jpg");
+  }
+
+  @media (min-width: @dekstop-width) {
+    &--main::before {
+      content: "";
+      position: absolute;
+      height: 696px;
+      width: 50%;
+      left: 50%;
+      top: -120px;
+      background-image: url("../img/dekstop-main-section-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+
+      @media (min-resolution: @retina) {
+        content: "";
+        background-size: cover;
+        background-image: url("../img/dekstop-main-section-background@2x.jpg");
+      }
+    }
   }
 }
 
@@ -45,7 +77,7 @@
   font-weight: 400;
   display: block;
   background-color: @additional-theme-color;
-  padding: 7px 44px;
+  padding: 13px 44px;
   width: auto;
   text-align: center;
 

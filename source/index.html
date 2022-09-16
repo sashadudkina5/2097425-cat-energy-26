@@ -9,10 +9,10 @@
   <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-  <div class="page-container page-container--main">
+  <div class="page-container">
   <header class="main-header">
     <a class="main-header__logo logo-image">
       <span class="visually-hidden">Логотип Кэт Энерджи. Переход на главную страницу.</span>
@@ -46,13 +46,10 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="main-section">
+    <section class="main-section main-section--main">
         <h1 class="main-section__title">Функциональное питание для&nbsp;котов</h1>
         <p class="main-section__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/main-picture-header-dekstop.webp 1x, img/main-picture-header-dekstop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-picture-header-tablet.webp 1x, img/main-picture-header-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/main-picture-header-mobile.webp 1x, img/main-picture-header-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/main-picture-header-dekstop.png 1x, img/main-picture-header-dekstop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/main-picture-header-tablet.png 1x, img/main-picture-header-tablet@2x.png 2x">
         <img class="main-section__image" src="img/main-picture-header-mobile.png" srcset="img/main-picture-header-mobile@2x.png 2x"
@@ -106,6 +103,7 @@
         </ol>
     </section>
     <section class="example">
+      <div class="example__container">
       <div class="example__wrapper-main">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat
@@ -138,6 +136,7 @@
             <span class="example__after">стало</span>
           </div>
         </div>
+      </div>
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation invitation--main">
@@ -154,8 +153,8 @@
         <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
           <a class="main-footer__logo-name-link">
-          <svg class="main-footer__logo-name-icon" width="101" height="18">
-            <use href="img/sprite.svg#logo-name-icon"></use>
+          <svg class="main-footer__footer-logo" width="128" height="24">
+            <use href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
         </div>

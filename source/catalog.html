@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <div class="page-container">
@@ -47,9 +47,13 @@
   </header>
   <main class="main-container">
     <section class="catalog">
+      <div class="catalog__title-wrapper">
       <h1 class="catalog__title">Каталог продукции</h1>
+    </div>
+    <div class="catalog__container">
         <ul class="catalog__list">
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/chiken-500-dekstop.png 1x, img/chiken-500-dekstop@2x.png 2x">
@@ -78,8 +82,10 @@
           </div>
           </div>
           <a class="product__purchase button" href="#">заказать</a>
+        </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/chicken-1000-dekstop.png 1x, img/chicken-1000-dekstop@2x.png 2x">
@@ -108,8 +114,10 @@
           </div>
         </div>
             <a class="product__purchase button" href="#">заказать</a>
+          </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/fish-500-dekstop.png 1x, img/fish-500-dekstop@2x.png 2x">
@@ -138,8 +146,10 @@
           </div>
         </div>
             <a class="product__purchase button" href="#">заказать</a>
+            </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/fish-1000-dekstop.png 1x, img/fish-1000-dekstop@2x.png 2x">
@@ -168,8 +178,10 @@
           </div>
         </div>
             <a class="product__purchase button" href="#">заказать</a>
+            </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/buckwheat-500-dekstop.png 1x, img/buckwheat-500-dekstop@2x.png 2x">
@@ -198,8 +210,10 @@
           </div>
         </div>
             <a class="product__purchase button" href="#">заказать</a>
+            </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/buckwheat-1000-dekstop.png 1x, img/buckwheat-1000-dekstop@2x.png 2x">
@@ -228,8 +242,10 @@
           </div>
             </div>
             <a class="product__purchase button" href="#">заказать</a>
+            </div>
           </li>
           <li class="catalog__item product">
+            <div class="product__container">
             <div class="product__info-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/rice-500-dekstop.png 1x, img/rice-500-dekstop@2x.png 2x">
@@ -258,51 +274,65 @@
           </div>
             </div>
             <a class="product__purchase button" href="#">заказать</a>
+            </div>
           </li>
           <li class="catalog__item catalog__item--more show-more">
+            <div class="show-more__container">
             <div class="show-more__wrapper">
             <p class="show-more__title">Показать еще 100500&nbsp;товаров</p>
             <p class="show-more__description">На&nbsp;самом&nbsp;деле вкусов гораздо больше!</p>
             <button class="show-more__button button" type="button">показать&nbsp;все</button>
           </div>
+        </div>
           </li>
         </ul>
+      </div>
     </section>
     <section class="additional-products">
+      <div class="additional-products__title-wrapper">
       <h2 class="additional-products__title">Дополнительные товары</h2>
+    </div>
       <div class="additional-products__wrapper">
         <ul class="additional-products__list">
           <li class="additional-products__item">
+            <div class="additional-products__container">
             <p class="additional-products__name">Сахарозаменитель</p>
             <dl class="additional-products__characteristics">
               <dt class="additional-products__characteristics-property">1&nbsp;упаковка (100&nbsp;г)</dt>
               <dd class="additional-products__characteristics-value">200&nbsp;Р.</dd>
             </dl>
             <a class="additional-products__purchase-button button" href="#">заказать</a>
+          </div>
           </li>
           <li class="additional-products__item">
+            <div class="additional-products__container">
             <p class="additional-products__name">питьевая вода</p>
             <dl class="additional-products__characteristics">
               <dt class="additional-products__characteristics-property">5&nbsp;литров</dt>
               <dd class="additional-products__characteristics-value">50&nbsp;Р.</dd>
             </dl>
             <a class="additional-products__purchase-button button" href="#">заказать</a>
+            </div>
           </li>
           <li class="additional-products__item">
+            <div class="additional-products__container">
             <p class="additional-products__name">молоко</p>
             <dl class="additional-products__characteristics">
               <dt class="additional-products__characteristics-property">1&nbsp;литр</dt>
               <dd class="additional-products__characteristics-value">100&nbsp;Р.</dd>
             </dl>
             <a class="additional-products__purchase-button button" href="#">заказать</a>
+            </div>
           </li>
           <li class="additional-products__item">
+            <div class="additional-products__container">
             <p class="additional-products__name">витамины</p>
             <dl class="additional-products__characteristics">
               <dt class="additional-products__characteristics-property">1&nbsp;упаковка (30&nbsp;г)</dt>
               <dd class="additional-products__characteristics-value">300&nbsp;Р.</dd>
             </dl>
             <a class="additional-products__purchase-button button" href="#">заказать</a>
+            </div>
           </li>
         </ul>
       <aside class="gift">
@@ -327,8 +357,8 @@
         <div class="main-footer__wrapper">
         <div class="main-footer__logo-name">
         <a class="main-footer__logo-name-link" href="index.html" aria-label="Переход на главную страницу.">
-          <svg class="main-footer__logo-name-icon" width="101" height="18">
-            <use href="img/sprite.svg#logo-name-icon"></use>
+          <svg class="main-footer__footer-logo" width="128" height="24">
+            <use href="img/sprite.svg#footer-logo"></use>
           </svg>
         </a>
       </div>
