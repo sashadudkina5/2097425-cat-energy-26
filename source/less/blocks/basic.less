@@ -61,6 +61,25 @@
   &--age {
     width: 172px;
   }
+
+  &:hover {
+    border: 1px solid @color-catalog-text-decoration;
+  }
+
+  &:focus {
+    border: 1px solid @description-main-color;
+    outline: 1px solid @description-main-color;
+  }
+
+  &:focus-visible {
+    border: 1px solid @description-main-color;
+    outline: 1px solid @description-main-color;
+  }
+
+  &:invalid {
+    border: 1px solid @color-input-error;
+    outline: 1px solid @color-input-error;
+  }
 }
 
 @media (min-width: @tablet-width) {

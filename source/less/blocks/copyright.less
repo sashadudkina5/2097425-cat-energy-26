@@ -24,3 +24,26 @@
     justify-content: space-between;
   }
 }
+
+.copyright-logo__footer-icon {
+  fill: @color-icons;
+}
+
+@media (min-width: @dekstop-width) {
+  .copyright-logo__footer-icon {
+    .copyright-logo:hover & {
+      fill: @additional-theme-color;
+    }
+
+    .copyright-logo:active & {
+      fill: @additional-theme-color;
+      opacity: 0.3;
+    }
+  }
+
+  .copyright-name {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
