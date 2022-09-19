@@ -83,16 +83,20 @@
 
   .how-it-works__list {
     display: grid;
-    grid-template-columns: 230px 230px;
-    column-gap: 153px;
-    row-gap: 37px;
+    grid-template-columns: 235px 235px;
+    column-gap: 150px;
+    row-gap: 35px;
   }
 
   .how-it-works__item {
     padding-left: 0;
     padding-top: 151px;
     margin-bottom: 0;
+    min-height: 280px;
     padding-bottom: 57px;
+    background-size: 80px 80px, auto;
+    background-position: 0 40px, 122px 40px;
+    background-repeat: no-repeat;
 
     &:not(:last-of-type) {
       margin-bottom: 0;
@@ -100,26 +104,18 @@
 
     &--nutrients {
       background-image: @nutrients-icon, @how-it-works-first-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--preparing {
       background-image: @preparing-icon, @how-it-works-second-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--usage {
       background-image: @usage-icon, @how-it-works-third-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--outcome {
       background-image: @outcome-icon, @how-it-works-fourth-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
   }
 }
@@ -140,7 +136,7 @@
   .how-it-works__list {
     display: flex;
     align-items: center;
-    column-gap: 94px;
+    column-gap: 95px;
   }
 
   .how-it-works__item {
@@ -149,29 +145,23 @@
     margin-bottom: 0;
     padding-bottom: 57px;
     width: 230px;
+    background-repeat: no-repeat;
+    background-position: 0 40px, 122px 40px;
 
     &--nutrients {
       background-image: @nutrients-icon, @how-it-works-first-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--preparing {
       background-image: @preparing-icon, @how-it-works-second-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--usage {
       background-image: @usage-icon, @how-it-works-third-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
 
     &--outcome {
       background-image: @outcome-icon, @how-it-works-fourth-step;
-      background-repeat: no-repeat;
-      background-position: 0 40px, 118px 40px;
     }
   }
 }

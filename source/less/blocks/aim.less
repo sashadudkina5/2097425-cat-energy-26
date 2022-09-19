@@ -1,9 +1,22 @@
 .aim {
   border: none;
   padding: 0;
-  padding-top: 22px;
-  padding-bottom: 19px;
-  position: relative;
+  padding-top: 25px;
+  padding-bottom: 23px;
+
+  @media (max-width: @tablet-width-only) {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @color-border-decoration-additional;
+    border-bottom: 1px solid @color-border-decoration-additional;
+    width: 100%;
+  }
+}
+
+.aim__container {
   width: 280px;
   margin: 0 auto;
 
@@ -14,27 +27,15 @@
   @media (min-width: @dekstop-width) {
     width: 568px;
   }
-
-  &::after {
-    @media (max-width: @mobile-width-only) {
-      content: "";
-      position: absolute;
-      background-color: @color-border-decoration-additional;
-      width: 320px;
-      height: 1px;
-      bottom: 0;
-      left: -20px;
-    }
-  }
 }
 
 .aim__label {
   display: block;
-  padding-left: 60px;
+  padding-left: 45px;
   position: relative;
 
   &:not(:last-of-type) {
-    margin-bottom: 13px;
+    margin-bottom: 18px;
   }
 }
 
@@ -97,7 +98,7 @@
 @media (min-width: @tablet-width) {
   .aim {
     border: 1px solid @color-border-form;
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .aim__label-name {
@@ -109,14 +110,16 @@
     &:not(:last-of-type) {
       margin-bottom: 23px;
     }
+    padding-left: 57px;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: @dekstop-width) {
   .aim {
     border: 1px solid @color-border-form;
-    padding-left: 28px;
-    padding-top: 25px;
+    padding-left: 0;
+    padding-top: 30px;
     height: 200px;
   }
 
@@ -126,6 +129,8 @@
   }
 
   .aim__label {
+    margin-left: 25px;
+
     &:not(:last-of-type) {
       margin-bottom: 23px;
     }

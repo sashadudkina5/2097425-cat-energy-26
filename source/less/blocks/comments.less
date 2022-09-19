@@ -1,7 +1,11 @@
 .comments {
   padding: 0;
   border: none;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
+  position: relative;
+}
+
+.comments__container {
   width: 280px;
   margin: 0 auto;
 
@@ -18,18 +22,22 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 38px;
-  position: relative;
+  background-color: @main-theme-color;
+  width: max-content;
+  padding-left: 2em;
+  padding-right: 1em;
+  margin-left: -2em;
+  z-index: 1;
 
   &::after {
-    @media (max-width: @mobile-width-only) {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 158px;
-      height: 2px;
-      top: 15px;
-      right: -175px;
-    }
+    content: "";
+    position: absolute;
+    background-color: @additional-theme-color;
+    width: 100%;
+    height: 2px;
+    top: 0.5em;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -41,9 +49,9 @@
   text-transform: uppercase;
   font-family: @main-font;
   border: 1px solid @color-border-form;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 8px;
   padding-bottom: 9px;
   box-sizing: border-box;
   width: 100%;
@@ -69,61 +77,60 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    position: relative;
+    background-color: @main-theme-color;
+    width: max-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: -1em;
+    z-index: 1;
 
     &::after {
       content: "";
       position: absolute;
       background-color: @additional-theme-color;
-      width: 478px;
+      width: 100%;
       height: 2px;
-      top: 20px;
-      right: -520px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 30px;
-      height: 2px;
-      top: 20px;
-      left: -55px;
+      top: 0.7em;
+      right: 0;
+      z-index: -1;
     }
   }
 
   .comments__input {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
   .comments {
-    padding-bottom: 65px;
+    padding-bottom: 85px;
   }
 }
 
 @media (min-width: @dekstop-width) {
+  .comments__input {
+    padding-top: 7px;
+    padding-left: 18px;
+  }
+
   .comments__legend {
-    position: relative;
+    background-color: @main-theme-color;
+    width: max-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: -1em;
+    z-index: 1;
 
     &::after {
       content: "";
       position: absolute;
       background-color: @additional-theme-color;
-      width: 1108px;
+      width: 100%;
       height: 2px;
-      top: 20px;
-      right: -1155px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 70px;
-      height: 2px;
-      top: 20px;
-      left: -100px;
+      top: 0.6em;
+      right: 0;
+      z-index: -1;
     }
   }
 }

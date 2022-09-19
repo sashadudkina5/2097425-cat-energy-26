@@ -2,9 +2,12 @@
   padding: 0;
   padding-bottom: 24px;
   border: none;
+  position: relative;
+}
+
+.contacts__container {
   width: 280px;
   margin: 0 auto;
-  margin-top: 26px;
 
   @media (min-width: @tablet-width) {
     width: 630px;
@@ -20,18 +23,27 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
-  position: relative;
+  background-color: @main-theme-color;
+  width: 300px;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: -2em;
+  z-index: 1;
+
+  @media (max-width: @mobile-width-only) {
+    padding-right: 0;
+    width: 250px;
+  }
 
   &::after {
-    @media (max-width: @mobile-width-only) {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 99px;
-      height: 2px;
-      top: 15px;
-      right: -20px;
-    }
+    content: "";
+    position: absolute;
+    background-color: @additional-theme-color;
+    width: 100%;
+    height: 2px;
+    top: 0.7em;
+    right: 0;
+    z-index: -1;
   }
 }
 
@@ -39,9 +51,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 10px;
 
   &:not(:last-of-type) {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 }
 
@@ -66,12 +79,12 @@
   padding-top: 13px;
   padding-bottom: 15px;
   padding-right: 20px;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
 
   &--phone {
-    width: 204px;
     background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
 
     &:focus {
       background-image: url("../img/phone-icon-focus.svg");
@@ -83,10 +96,7 @@
   }
 
   &--email {
-    width: 219px;
     background-image: url("../img/email-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
 
     &:focus {
       background-image: url("../img/email-icon-focus.svg");
@@ -122,45 +132,35 @@
     padding-right: 55px;
     font-size: 20px;
     line-height: 30px;
-
-    &--phone {
-      width: 535px;
-    }
-
-    &--email {
-      width: 551px;
-    }
+    padding-left: 18px;
+    background-position: 97% 50%;
   }
 
   .contacts {
-    padding-bottom: 65px;
-    margin-top: 71px;
+    padding-bottom: 60px;
   }
 
   .contacts__legend {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
-    position: relative;
+    margin-bottom: 70px;
+    background-color: @main-theme-color;
+    width: max-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: static;
+    margin-left: -1em;
+    z-index: 1;
 
     &::after {
       content: "";
       position: absolute;
       background-color: @additional-theme-color;
-      width: 145px;
+      width: 100%;
       height: 2px;
-      top: 20px;
-      right: -172px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 30px;
-      height: 2px;
-      top: 20px;
-      left: -55px;
+      top: 0.5em;
+      right: 0;
+      z-index: -1;
     }
   }
 
@@ -172,8 +172,9 @@
 
   .contacts__wrapper {
     &:not(:last-of-type) {
-      margin-bottom: 20px;
+      margin-bottom: 13px;
     }
+    column-gap: 18px;
   }
 }
 
@@ -181,16 +182,6 @@
 @media (min-width: @dekstop-width) {
   .contacts__properties-container {
     display: flex;
-  }
-
-  .contacts__input {
-    &--phone {
-      width: 472px;
-    }
-
-    &--email {
-      width: 472px;
-    }
   }
 
   .contacts__wrapper {
@@ -203,30 +194,27 @@
   }
 
   .contacts {
-    padding-bottom: 69px;
+    padding-bottom: 67px;
   }
 
   .contacts__legend {
-    position: relative;
+    background-color: @main-theme-color;
+    width: max-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: static;
+    margin-left: -1em;
+    z-index: 1;
 
     &::after {
       content: "";
       position: absolute;
       background-color: @additional-theme-color;
-      width: 778px;
+      width: 100%;
       height: 2px;
-      top: 20px;
-      right: -820px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: @additional-theme-color;
-      width: 70px;
-      height: 2px;
-      top: 20px;
-      left: -100px;
+      top: 0.6em;
+      right: 0;
+      z-index: -1;
     }
   }
 }

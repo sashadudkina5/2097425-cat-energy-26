@@ -17,6 +17,12 @@
     width: @tablet-width;
   }
 
+  @media (max-width: @mobile-width-only) {
+    &--main {
+      margin-top: -15px;
+    }
+  }
+
   @media (min-width: @dekstop-width) {
     width: @dekstop-width;
   }
@@ -31,8 +37,8 @@
       position: absolute;
       height: 696px;
       width: 50%;
-      left: 50%;
-      top: -120px;
+      right: 0;
+      top: 0;
       background-image: url("../img/dekstop-main-section-background.jpg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -124,11 +130,11 @@
   .main-section__choose-program-button {
     width: 244px;
     position: absolute;
-    top: 290px;
+    top: 292px;
     left: 120px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 15px 26px;
   }
 
   .main-section__image {
@@ -140,11 +146,16 @@
   .main-section {
     background-image: none;
     text-align: left;
-    position: relative;
+    position: static;
     padding-left: 190px;
     padding-right: 110px;
     padding-bottom: 54px;
     min-height: 583px;
+    padding-top: 103px;
+  }
+
+  .main-section__wrapper {
+    position: relative;
   }
 
   .main-section__title {
@@ -167,16 +178,16 @@
   .main-section__choose-program-button {
     width: 244px;
     position: absolute;
-    left: 190px;
-    top: 290px;
+    left: 0;
+    top: 236px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 16px 26px;
   }
 
   .main-section__image {
     position: absolute;
-    top: 30px;
-    right: 330px;
+    top: -80px;
+    right: 220px;
   }
 }

@@ -55,20 +55,21 @@
       <form class="questionnaire__form form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="questionnaire__wrapper-basic-and-aim">
         <fieldset class="questionnaire__fieldset basic">
-          <div class="questionnaire__property basic__wrapper questionnaire__property--name">
+          <div class="questionnaire__property basic__wrapper">
             <label class="basic__label" for="name">Имя<em>*</em></label>
-            <input class="basic__input basic__input--name" type="text" placeholder="Барсик" value="" name="name" id="name" required>
+            <input class="basic__input" type="text" placeholder="Барсик" value="" name="name" id="name" required>
           </div>
-          <div class="questionnaire__property basic__wrapper questionnaire__property--weight">
+          <div class="questionnaire__property basic__wrapper">
             <label class="basic__label" for="weight">Вес (кг):<em>*</em></label>
-            <input class="basic__input basic__input--weight" type="number" placeholder="7" value="" name="weight" id="weight" required>
+            <input class="basic__input" type="number" placeholder="7" value="" name="weight" id="weight" required>
           </div>
-          <div class="questionnaire__property basic__wrapper questionnaire__property--age">
+          <div class="questionnaire__property basic__wrapper">
             <label class="basic__label" for="age">Возраст (лет):</label>
-            <input class="basic__input basic__input--age" type="number" placeholder="7" value="" name="age" id="age">
+            <input class="basic__input" type="number" placeholder="7" value="" name="age" id="age">
           </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset aim">
+          <div class="aim__container">
           <label class="aim__label">
             <input class="aim__input visually-hidden" type="radio" id="lose-weight" name="target-aim" value="lose-weight" checked>
             <span class="aim__input-control-mark"></span>
@@ -84,9 +85,11 @@
             <span class="aim__input-control-mark"></span>
             <span class="aim__label-name">Не&nbsp;знаю (Нужен ваш совет)</span>
           </label>
+        </div>
         </fieldset>
       </div>
         <fieldset class="questionnaire__fieldset contacts">
+          <div class="contacts__container">
           <legend class="contacts__legend">
             Контактные данные
             (владельца кота)
@@ -103,13 +106,17 @@
               required>
           </div>
         </div>
+      </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset comments">
+          <div class="comments__container">
           <legend class="comments__legend">Комментарий</legend>
           <textarea class="comments__input" name="comments" cols="24"
             rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset additional">
+          <div class="additional__container">
           <legend class="additional__legend">Дополнительно</legend>
           <div class="additional__wrapper">
           <label class="additional__label">
@@ -133,11 +140,14 @@
             <span class="additional__label-name">витамины</span>
           </label>
         </div>
+      </div>
         </fieldset>
+        <div class="questionnaire__submit-container">
         <div class="questionnaire__submit-wrapper">
         <button class="questionnaire__button button" type="submit">отправить заявку</button>
         <p class="questionnaire__required">*&nbsp;—&nbsp;Обязательные поля</p>
       </div>
+    </div>
       </form>
     </section>
     <footer class="main-footer">

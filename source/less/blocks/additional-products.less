@@ -1,28 +1,32 @@
 .additional-products {
-  padding-top: 25px;
+  position: relative;
+}
+
+.additional-products__container-main {
+  padding-top: 23px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+    padding-top: 60px;
   }
 
   @media (min-width: @dekstop-width) {
     width: @dekstop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-top: 75px;
   }
-  }
-
+}
 
 .additional-products__title-wrapper {
-  width: 320px;
-  margin: 0 auto;
-  background-color: @main-theme-color;
-
   @media (min-width: @tablet-width) {
     width: 413px;
-    margin-left: 0;
+    margin-left: 67px;
   }
 
   @media (min-width: @dekstop-width) {
@@ -50,7 +54,31 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 36px;
-  position: relative;
+  background-color: @main-theme-color;
+  width: max-content;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: -1em;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: @additional-theme-color;
+    width: 100%;
+    height: 2px;
+    top: 1.4em;
+    right: 0;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 2.4em;
+    }
+
+    @media (min-width: @dekstop-width) {
+      display: none;
+    }
+  }
 }
 
 .additional-products__list {
@@ -69,8 +97,9 @@
 }
 
 .additional-products__item {
-  padding-top: 13px;
+  padding-top: 10px;
   padding-bottom: 19px;
+  min-height: 130px;
 
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid @color-border-decoration-additional;
@@ -150,20 +179,7 @@
   }
 
   .additional-products {
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0 auto;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 2px;
-      background-color: @additional-theme-color;
-      width: 100%;
-      left: 0;
-      top: 45px;
-      z-index: -1;
-    }
   }
 
   .additional-products__container {
@@ -210,16 +226,34 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
-    margin-left: 37px;
-    position: relative;
+    background-color: @main-theme-color;
+    width: max-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: -1em;
+    z-index: 1;
+
+
+    @media (max-width: @tablet-width-only) {
+      .additional-products__title::after {
+        content: "";
+        position: absolute;
+        background-color: @additional-theme-color;
+        width: 100%;
+        height: 2px;
+        top: 2.4em;
+        right: 0;
+        z-index: -1;
+      }
+    }
   }
 }
 
 @media (min-width: @dekstop-width) {
   .additional-products {
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-bottom: 86px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 81px;
 
     &::after {
       content: "";
@@ -228,7 +262,7 @@
       background-color: @additional-theme-color;
       width: 100%;
       left: 0;
-      top: 45px;
+      top: 6em;
       z-index: -1;
     }
   }
@@ -236,17 +270,19 @@
   .additional-products__container {
     width: 708px;
     display: grid;
-    grid-template-columns: 1fr 1fr 244px;
+    grid-template-columns: 325px 325px 244px;
     align-items: center;
-    column-gap: 38px;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .additional-products__list {
     border: none;
     border-bottom: 1px solid @color-catalog-text-decoration;
     margin: 0;
+    width: 1220px;
   }
 
   .additional-products__wrapper {
@@ -258,6 +294,7 @@
 
   .additional-products__item {
     padding: 0;
+    min-height: auto;
   }
 
   .additional-products__purchase-button {
@@ -269,12 +306,15 @@
   .additional-products__characteristics {
     margin-bottom: 0;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 35px;
   }
 
   .additional-products__name {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
+    padding-left: 5px;
   }
 
   .additional-products__characteristics-property {

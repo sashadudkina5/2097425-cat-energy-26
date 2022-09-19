@@ -2,6 +2,10 @@
   margin-left: auto;
   position: relative;
   z-index: 1;
+
+  @media (max-width: @tablet-width-only) {
+    padding-top: 15px;
+  }
 }
 
 .main-nav__list {
@@ -17,7 +21,7 @@
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: -30px;
+  top: -33px;
   z-index: 2;
   background-color: @main-theme-color;
 }
@@ -88,7 +92,7 @@
   }
 
   .main-nav__container {
-    padding-top: 15px;
+    padding-top: 0;
   }
 }
 

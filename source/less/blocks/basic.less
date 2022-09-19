@@ -13,24 +13,12 @@
   @media (min-width: @dekstop-width) {
     width: 570px;
   }
-
-  &::after {
-    @media (max-width: @mobile-width-only) {
-      content: "";
-      position: absolute;
-      background-color: @color-border-decoration-additional;
-      width: 100%;
-      height: 1px;
-      bottom: 0;
-      left: -20px;
-    }
-  }
 }
 
 .basic__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  column-gap: 13px;
 
   &:not(:last-of-type) {
     margin-bottom: 14px;
@@ -52,24 +40,13 @@
   color: @description-main-color;
   text-transform: uppercase;
   font-family: @main-font;
-  padding-top: 13px;
-  padding-left: 14px;
-  padding-bottom: 14px;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-bottom: 15px;
+  padding-right: 15px;
   border: 1px solid @color-border-form;
   box-sizing: border-box;
-
-  &--name {
-    width: 229px;
-  }
-
-  &--weight {
-    width: 204px;
-  }
-
-  &--age {
-    width: 172px;
-  }
+  flex-grow: 1;
 
   &:hover {
     border: 1px solid @color-catalog-text-decoration;
@@ -99,18 +76,8 @@
   .basic__input {
     font-size: 20px;
     line-height: 30px;
-
-    &--name {
-      width: 567px;
-    }
-
-    &--weight {
-      width: 536px;
-    }
-
-    &--age {
-      width: 497px;
-    }
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .basic__label {
@@ -120,26 +87,12 @@
 
   .basic__wrapper {
     &:not(:last-of-type) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
   }
 }
 
 @media (min-width: @dekstop-width) {
-  .basic__input {
-    &--name {
-      width: 506px;
-    }
-
-    &--weight {
-      width: 475px;
-    }
-
-    &--age {
-      width: 436px;
-    }
-  }
-
   .basic {
     padding-bottom: 0;
   }
