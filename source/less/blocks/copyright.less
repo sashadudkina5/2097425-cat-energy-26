@@ -4,7 +4,8 @@
   justify-content: space-between;
 
   @media (max-width: @mobile-width-only) {
-    border-top: 1px solid @color-border-decoration-additional;
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -15,6 +16,8 @@
   line-height: 18px;
   font-family: @text-font;
   text-decoration: none;
+  padding-top: 5px;
+  align-self: start;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,6 +25,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .copyright-name {
+    padding-top: 15px;
+  }
+
+  .copyright-logo {
+    padding-top: 7px;
   }
 }
 
@@ -41,9 +52,15 @@
     }
   }
 
+  .copyright-logo {
+    padding-top: 15px;
+  }
+
   .copyright-name {
     &:active {
       opacity: 0.3;
     }
+
+    padding-top: 23px;
   }
 }

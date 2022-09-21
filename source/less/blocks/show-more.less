@@ -3,9 +3,23 @@
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: 50% 25px;
+  min-height: 209px;
 
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid @color-border-decoration-additional;
+  }
+}
+
+.show-moret__container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @dekstop-width) {
+    width: @dekstop-width;
   }
 }
 
@@ -68,6 +82,7 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 87px;
+    width: 170px;
   }
 
   .show-more__button {
@@ -100,5 +115,6 @@
 
   .show-more {
     border: 2px solid @block-background-color-additional;
+    min-height: 430px;
   }
 }

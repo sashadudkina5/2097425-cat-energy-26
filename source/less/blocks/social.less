@@ -1,24 +1,32 @@
 .social {
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid @color-border-decoration-additional;
+    border-bottom: 1px solid @color-border-decoration-additional;
   }
 }
 
 .social__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   align-content: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 135px;
 }
 
 .social__link-icon {
   fill: @color-icons;
 }
 
-.social__item {
-  margin-right: 25px;
+.social__item:not(:last-of-type) {
+  margin-right: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__item:not(:last-of-type) {
+    margin-right: 25px;
+  }
 }
 
 @media (min-width: @dekstop-width) {
