@@ -1,9 +1,26 @@
 .logo-image__icon {
+  width: 191px;
+  height: 38px;
+
   .logo-image:hover & {
     opacity: 0.8;
   }
 
   .logo-image:active & {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo-image__icon {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .logo-image__icon {
+    width: 202px;
+    height: 59px;
   }
 }

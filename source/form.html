@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicon-152.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -19,7 +21,7 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-      <img class="logo-image__icon" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+      <img class="logo-image__icon" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
       </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -90,10 +92,10 @@
       </div>
         <fieldset class="questionnaire__fieldset contacts">
           <div class="contacts__container">
-          <legend class="contacts__legend">
+          <p class="contacts__legend">
             Контактные данные
             (владельца кота)
-          </legend>
+          </p>
           <div class="contacts__properties-container">
           <div class="questionnaire__property contacts__wrapper questionnaire__property--email">
             <label class="сontacts__label" for="email">E-mail:<em>*</em></label>
@@ -110,14 +112,14 @@
         </fieldset>
         <fieldset class="questionnaire__fieldset comments">
           <div class="comments__container">
-          <legend class="comments__legend">Комментарий</legend>
+          <p class="comments__legend">Комментарий</p>
           <textarea class="comments__input" name="comments" cols="24"
             rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="questionnaire__fieldset additional">
           <div class="additional__container">
-          <legend class="additional__legend">Дополнительно</legend>
+          <p class="additional__legend">Дополнительно</p>
           <div class="additional__wrapper">
           <label class="additional__label">
             <input class="additional__input visually-hidden" type="checkbox" id="sweetener" name="additional-product" value="sweetener" checked>
@@ -160,7 +162,6 @@
             </div>
             <iframe class="invitation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716319485!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661603077828!5m2!1sru!2sru"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              карта
             </iframe>
         </section>
         <div class="main-footer__wrapper">
