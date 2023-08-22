@@ -12,6 +12,13 @@ import squoosh from 'gulp-libsquoosh';
 import {deleteAsync} from 'del';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import ghpages from "gh-pages";
+
+// GitHub
+
+// var ghpages = import('gh-pages');
+
+ghpages.publish('build', function(err) {});
 
 // Styles
 
@@ -154,7 +161,7 @@ inlineSvg: true
 
 // Default
 
-export default gulp.series(
+export const runDev = gulp.series(
   clean,
   copy,
   CopyImages,
@@ -169,4 +176,5 @@ export default gulp.series(
   gulp.series(
   server,
   watcher
-  ));
+  ),
+);
