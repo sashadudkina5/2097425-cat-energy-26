@@ -122,10 +122,6 @@
   text-transform: uppercase;
 }
 
-.example__image {
-  margin-bottom: 15px;
-}
-
 .example__before-after-wrapper {
   display: flex;
   padding-right: 40px;
@@ -161,7 +157,11 @@
   }
 
   .example {
-    background: linear-gradient(to bottom, @main-theme-color 57%, @block-background-color 57%);
+    background: linear-gradient(
+      to bottom,
+      @main-theme-color 57%,
+      @block-background-color 57%
+    );
   }
 
   .example__title {
@@ -253,7 +253,11 @@
   }
 
   .example {
-    background: linear-gradient(to bottom, @main-theme-color 25%, @block-background-color-additional 25%);
+    background: linear-gradient(
+      to bottom,
+      @main-theme-color 25%,
+      @block-background-color-additional 25%
+    );
     position: relative;
   }
 
@@ -302,10 +306,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 620px;
-    position: absolute;
-    top: -25px;
-    right: 130px;
+    // width: 620px;
+    // position: absolute;
+    // top: -25px;
+    // right: 130px;
   }
 
   .example__before-after-wrapper {

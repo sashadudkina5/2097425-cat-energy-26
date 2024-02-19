@@ -16,8 +16,6 @@ import ghpages from "gh-pages";
 
 // GitHub
 
-// var ghpages = import('gh-pages');
-
 ghpages.publish('build', function(err) {});
 
 // Styles

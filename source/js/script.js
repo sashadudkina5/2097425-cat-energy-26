@@ -1,3 +1,5 @@
+// mobile navigation menu
+
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -12,3 +14,15 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+// before/after slider
+
+document.getElementById('beforeAfterSlider').addEventListener('input', function(e) {
+  const sliderValue = e.target.value;
+  const afterElement = document.querySelector('.slider__before-after-container .after');
+
+  afterElement.style.width = sliderValue + '%';
+});
+
+
+

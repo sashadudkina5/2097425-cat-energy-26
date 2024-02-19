@@ -130,23 +130,24 @@
         <p class="example__costs">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;РУБ.</p>
       </div>
     </div>
-        <div class="example__visually">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/example-before-tablet-and-dekstop.webp 1x, img/example-before-tablet-and-dekstop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/example-before-tablet-and-dekstop.webp 1x, img/example-before-tablet-and-dekstop@2x.webp 2x">
-            <source type="image/webp" srcset="img/example-before-mobile.webp 1x, img/example-before-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/example-before-tablet-and-dekstop.png 1x, img/example-before-tablet-and-dekstop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/example-before-tablet-and-dekstop.png 1x, img/example-before-tablet-and-dekstop@2x.png 2x">
-          <img class="example__image" src="img/example-before-mobile.png" srcset="img/example-before-mobile@2x.png 2x"
-            alt="Фото кота Бориса.">
-          </picture>
-          <div class="example__before-after-wrapper">
-            <span class="example__before">Было</span>
-            <span class="before-after-rate"></span>
-            <span class="example__after">стало</span>
-          </div>
+        <div class="example__visually slider slider__container">
+          <div class="slider__before-after-container">
+            <div class="before">
+
+        </div>
+          <div class="after">
+
+        </div>
+        </div>
+        <div class="example__before-after-wrapper">
+          <span class="example__before">Было</span>
+          <input type="range" min="0" max="100" value="50" class="slider__input" id="beforeAfterSlider">
+          <span class="example__after">стало</span>
+        </div>
         </div>
       </div>
+
+
     </section>
     <footer class="main-footer">
         <section class="main-footer__invitation invitation invitation--main">
@@ -157,7 +158,7 @@
               Санкт-Петербург</address>
             </div>
           <iframe class="invitation__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716319485!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661603077828!5m2!1sru!2sru"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </section>
         <div class="main-footer__wrapper">

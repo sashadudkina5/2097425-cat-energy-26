@@ -1,0 +1,103 @@
+.slider__before-after-container {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+    height: 515px;
+  }
+}
+
+.before {
+  background-image: url("../img/example-before-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 262px;
+
+  @media (min-resolution: @retina) {
+    background-image: url("../img/example-before-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 515px;
+    background-image: url("../img/example-before-tablet-and-dekstop.png");
+
+    @media (min-resolution: @retina) {
+      background-image: url("../img/example-before-tablet-and-dekstop@2x.png");
+    }
+  }
+}
+
+.after {
+  background-image: url("../img/example-after-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 280px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+  height: 280px;
+
+  // For mobile
+  background-color: @block-background-color;
+
+  // For retina mobile
+  @media (min-resolution: @retina) {
+    background-image: url("../img/example-after-mobile@2x.png");
+  }
+
+  // For tablet
+  @media (min-width: @tablet-width) {
+    background-size: 600px 515px;
+    height: 515px;
+    background-color: transparent;
+    background-image: url("../img/example-after-tablet-and-dekstop.png"),
+      linear-gradient(
+        to bottom,
+        @main-theme-color 27%,
+        @block-background-color 27%
+      ),
+      url("../img/example-after-tablet-and-dekstop.png");
+
+    // For retina tablet
+    @media (min-resolution: @retina) {
+      background-image: url("../img/example-after-tablet-and-dekstop@2x.png"),
+        linear-gradient(
+          to bottom,
+          @main-theme-color 30%,
+          @block-background-color 29%
+        ),
+        url("../img/example-after-tablet-and-dekstop@2x.png");
+    }
+  }
+
+  // For desktop
+  @media (min-width: @dekstop-width) {
+    background-color: transparent;
+    background-image: linear-gradient(
+        to bottom,
+        @main-theme-color 27%,
+        @block-background-color-additional 27%
+      ),
+      url("../img/example-after-tablet-and-dekstop.png");
+
+    // For retina desktop
+    @media (min-resolution: @retina) {
+      background-image: url("../img/example-after-tablet-and-dekstop@2x.png"),
+        linear-gradient(
+          to bottom,
+          @main-theme-color 27%,
+          @block-background-color-additional 27%
+        ),
+        url("../img/example-after-tablet-and-dekstop@2x.png");
+    }
+  }
+}
