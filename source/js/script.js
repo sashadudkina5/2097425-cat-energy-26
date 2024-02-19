@@ -23,6 +23,3 @@ document.getElementById('beforeAfterSlider').addEventListener('input', function(
 
   afterElement.style.width = sliderValue + '%';
 });
-
-
-
