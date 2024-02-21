@@ -60,7 +60,19 @@
     &:active {
       opacity: 0.3;
     }
-
     padding-top: 23px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .copyright-name:hover + .copyright-logo .copyright-logo__footer-icon {
+    fill: @additional-theme-color;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .copyright-name:active + .copyright-logo .copyright-logo__footer-icon {
+    fill: @additional-theme-color;
+    opacity: 0.3;
   }
 }

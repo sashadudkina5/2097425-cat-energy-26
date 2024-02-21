@@ -1,58 +1,39 @@
-# Личный проект «Кэт энерджи»
+# Cat Energy
 
-* Студент: [Александра Дудкина](https://up.htmlacademy.ru/adaptive/26/user/2097425).
-* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/babtshe).
+Cat Energy is a responsive 3-page website for a cat food store, developed as a study project. This project was based on the repository [https://github.com/htmlacademy-adaptive/2097425-cat-energy-26](https://github.com/htmlacademy-adaptive/2097425-cat-energy-26). Basic Gulp functionality was provided, along with a Figma design.
 
----
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
+## Technologies Used
 
-Полезный файл:
+The project utilizes HTML, Less, and JavaScript to deliver a dynamic and visually appealing user interface. Additionally, the Gulp workflow has been optimized to streamline processes such as image conversion to WebP, SVG sprite creation, file minification and more.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+## Key Features
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+- **Responsive Design**: The layout and styles are optimized for scalable screens, following the mobile-first approach and adapting to tablet and desktop resolutions.
+- **Retina Resolution Support**: All images are optimized for retina resolution screens.
+- **Before/After Slider**: Implemented with JavaScript, allowing users to compare images before and after product's consumption.
+- **Accessibility**: The website adheres to accessibility principles to ensure inclusivity and usability for all users.
+- **Mobile Menu**: Implemented with JavaScript, the mobile menu functions even when JavaScript is disabled, ensuring a smooth user experience.
 
----
+## Available Scripts
 
-### Памятка
+In the project directory, you can run:
 
-#### 1. Зарегистрируйтесь на Гитхабе
+- `npm run lint`: Runs editorconfig and stylelint to ensure code quality and adherence to coding standards.
+- `npm run build`: Builds the project using Gulp, optimizing images, creating SVG sprites, and minifying files.
+- `npm start`: Runs the development server using Gulp, allowing you to preview the website in your browser.
+- `npm run deploy`: Builds the project and deploys it to GitHub Pages.
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+## Getting Started
 
-#### 2. Создайте форк
+To get started with Cat Energy, follow these steps:
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2097425-cat-energy-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install project dependencies.
+4. Start the development server by running `npm start`.
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the website.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+## Project Website
 
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/2097425-cat-energy-26/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/2097425-cat-energy-26/actions
+To view the Cat Energy website, visit the following link: [Cat Energy Website](https://sashadudkina5.github.io/2097425-cat-energy-26/form.html)

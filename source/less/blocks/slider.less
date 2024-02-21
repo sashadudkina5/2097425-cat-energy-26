@@ -126,16 +126,23 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  margin-top: -12px; /* Centers thumb on the track */
-  height: 34px;
-  width: 34px;
+  margin-top: -4px; /* Centers thumb on the track */
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   box-shadow: 0 2px 5px @color-catalog-text-decoration;
-  background: radial-gradient(
-    circle at center,
-    @additional-theme-color 8px,
-    @main-theme-color 8px
-  );
+  background: @additional-theme-color;
+
+  @media (min-width: @tablet-width) {
+    height: 34px;
+    width: 34px;
+    margin-top: -12px;
+    background: radial-gradient(
+      circle at center,
+      @additional-theme-color 8px,
+      @main-theme-color 8px
+    );
+  }
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
