@@ -5,14 +5,15 @@ Cat Energy is a responsive 3-page website for a cat food store, developed as a s
 
 ## Technologies Used
 
-The project utilizes HTML, Less, and JavaScript to deliver a dynamic and visually appealing user interface. Additionally, the Gulp workflow has been optimized to streamline processes such as image conversion to WebP, SVG sprite creation, file minification and more.
+HTML, Less, and JavaScript. 
+Additionally, the Gulp workflow has been optimized to streamline processes such as image conversion to WebP, SVG sprite creation, file minification and more.
 
 ## Key Features
 
 - **Responsive Design**: The layout and styles are optimized for scalable screens, following the mobile-first approach and adapting to tablet and desktop resolutions.
 - **Retina Resolution Support**: All images are optimized for retina resolution screens.
 - **Before/After Slider**: Implemented with JavaScript, allowing users to compare images before and after product's consumption.
-- **Accessibility**: The website adheres to accessibility principles to ensure inclusivity and usability for all users.
+- **Accessibility and cross-browser compatibility**: The website adheres to accessibility principles to ensure inclusivity and usability for all users. Cross-browser compatibility is implemented with Gulp automations, ensuring the site functions correctly across different web browsers.
 - **Mobile Menu**: Implemented with JavaScript, the mobile menu functions even when JavaScript is disabled, ensuring a smooth user experience.
 
 ## Available Scripts
