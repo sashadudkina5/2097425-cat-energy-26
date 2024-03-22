@@ -37,4 +37,4 @@ To get started with Cat Energy, follow these steps:
 
 ## Project Website
 
-To view the Cat Energy website, visit the following link: [Cat Energy Website](https://sashadudkina5.github.io/2097425-cat-energy-26/form.html)
+To view the Cat Energy website, visit the following link: [Cat Energy Website](https://sashadudkina5.github.io/PetShop_adaptive_website/)
